@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\render_controller">
+      <UniqueIdentifier>{3a73fe32-e016-4fbd-9906-58786a39e382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render_proxy">
+      <UniqueIdentifier>{018740a9-d313-4b6b-9406-674dd3be578e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_controller">
+      <UniqueIdentifier>{b8b163c1-6c07-4ab4-bf63-b64202633df7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_proxy">
+      <UniqueIdentifier>{871a6624-1853-49f8-93d3-2d2a18be363c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_rendercontrollerfactory.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_renderproxy.h">
+      <Filter>Header Files\render_proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_bevrendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_rendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_shadedsurfacerendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_voi_preview_rendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_beam_preview_rendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mlcrendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_ut_rendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_easyplan_image_rendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_gallery_mprrendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_gallery_shadedsurfacerendercontroller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_fusion_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mpr_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mpr_render_controller_axial.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_admin_mpr_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_common_fusion_mpr_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_common_mpr_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_planQA_mpr_render_controller.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_planQA_mpr_render_controller_axial.h">
+      <Filter>Header Files\render_controller</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_renderproxy.cpp">
+      <Filter>Source Files\render_proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_bevrendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_rendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_shadedsurfacerendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_voi_preview_rendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_beam_preview_rendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_mlcrendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_ut_rendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_easyplan_image_rendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_gallery_mprrendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_gallery_shadedsurfacerendercontroller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_admin_mpr_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_common_fusion_mpr_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_common_mpr_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_fusion_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_mpr_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_mpr_render_controller_axial.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_planQA_mpr_render_controller.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_planQA_mpr_render_controller_axial.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rc_render_controller_factory.cpp">
+      <Filter>Source Files\render_controller</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsRenderController.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

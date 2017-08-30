@@ -1,0 +1,1875 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_beamgocollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_beamgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_mprgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_addbeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_mprpageturn_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatebeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_beamcollectiongraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_beamgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_mprgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_volumegraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_beamrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_bevbeamrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mprrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_dosegraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_refreshdoseoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_voigraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_voigraphicobjectcollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_voigraphicobejctconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_voigraphicobejctcollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_addvoioperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_drrgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_poigraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_poigraphicobjectcollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_poigraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_poigraphicobjectcollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_addpoioperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_mprdoserenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_mprdosegraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_shadedvoistrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_poigraphicobjectcollectionconverter.cpp" />
+    <ClCompile Include="go_converter\tps_rl_poigraphicobjectconverter.cpp" />
+    <ClCompile Include="graphic_object\tps_rl_poigraphicobject.cpp" />
+    <ClCompile Include="graphic_object\tps_rl_poigraphicobjectcollection.cpp" />
+    <ClCompile Include="operation\tps_rl_deleteoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatepoioperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_editsetuppoigraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_setupptcrosshairstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_mprzoompanwindowing_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatesetupcrosshairoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_editsetuppoigraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatesetupcrosshairoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_setupptcrosshairstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_voieditingredoundooperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_scalerulerstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_dosegridboundarygraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_dosegridboundarygraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_dosegridboundaryrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_editdosegridboundaryoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_fusiongraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_fusionrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_rotateshadedsurfaceoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_showdosegridboundaryoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_switchsegmentoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_wedgegraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_wedgegraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatevrdisplayoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_updatelimitregionoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_refreshfusionfactoroperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatedrrdisplayoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_navigatecuberenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_nudgeshapegraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_backgroundrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_bevdisplayoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_colorspectrarenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_pseudocoloroperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_activechesseditoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_editchessboardooperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_refreshfusiontypeoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatevoidsplayoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatevoioperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_cornertextinforenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_pageturnformovieoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_highlightbeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_textoverlaygraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_rulertextgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_preview_voi_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_normalgroupcollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_normalgroupcollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_landmarkgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_updatevolumeoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_removetableoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatefusionregionoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_drrpseudocolorgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_manualremovetablegraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_fusiongraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_crosshair_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_crosshair_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_crosshair_hittest_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_crosshair_movement_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_crosshair_rotate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_dummyrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_ct2density_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_corsshair_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_drrfluencemapswitchoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_crosshair_mode_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_voi3d_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_placecamerafrombeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_statecontrol_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_mascot_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mascot_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_table_box_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_segmentgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_hot_spots_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_hot_spots_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mpr_hot_spots_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_pixelbufferbmpalphawindowingconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_doselineobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_doselineobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_pixelbufferbmpalphawindowingconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_pixelbufferbmpalphawindowingconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_poi_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_corner_info_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_simplebeamrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_simplebeamgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_beamtemplategraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_simplebeamgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_beamtemplategraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_refresh_registration_result_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_antialiased_circle_painter.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_chess_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatebeamtemplatepreviewoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_shaded_surface_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_shaded_voi_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_shadedsurface_zoom_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_tablelineobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_beam_view_camera_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_simulator_mlcrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_drr_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_reset_drr_windowing_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_ezcameragraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_applicator_graphic_object.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_applicator_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_block_graphic_object.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_block_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_block_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_setrulervisibility_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_setdrrvisibility_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_setmlctransparency_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatelightsettingoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_applicator_render_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_mprreset_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_axialpageturn_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_smoothmesh_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_drr_render_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_surfacecamera_graphicobject_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_bev_dose_shaded_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_dose_mesh_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_dose_update_mesh_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_imagetext_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_poitextrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_normal_group_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_easyplan_setpoirenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_addnormalgroupoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_normal_group_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\drr_gl_generator.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_colortable_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_cornerinfographicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_textgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_vr_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_camera_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_crosshair_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_measuregraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_measurevaluegraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_mprgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_gallery_volumegraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_easyplan_beamcollectiongraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_easyplandrrgraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_easyplanmeasuregraphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_volume4d_graphicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_easyplan_drrgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_easyplan_measuregraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_gallery_measuregraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_gallery_textgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_volume4d_graphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_gallery_measurevaluegraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_mpr_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_dose_clear_mesh_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatesegmentoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_volume4d_change_current_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_deleteisocenter_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_deletenormpoint_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_modifybeam_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_resetimage_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setisocenter_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setnormpoint_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setpan_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setrotation_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setzoom_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplanchangebeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_measureangle_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_measuredistance_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setinverse_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_setwindowing_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplandeletebeamoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_crosshair_mode_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_crosshair_movement_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_editdistance_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_edittext_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_measurehittest_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_mprpageturn_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_mprrotate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_mprupdatecornerinfo_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_mprzoompanwindowing_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_text_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_vrrotate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_crosshair_rotate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_measuredistance_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_measureangle_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_mprcornerinfo_visible_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_volume4d_bev_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_volume4d_mpr_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_easyplan_measuredistancestrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_easyplan_measureanglestrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_easyplandrrrenderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_measureanglevaluestrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_textstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_vr_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_measuredistancestrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_measureanglestrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_bevreset_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_fluence_map_render_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_switch_bev_dispay_mode_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="shaders\tps_rl_shaders.cpp">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_edit_arc_beam_cache_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_contoursgraphicobject.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_contoursgraphicobjectcollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_contoursgocollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_camera_graphic_object.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_set_drr_down_sample_rate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_ct2density_graphicobjectcollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updatedrrsettingoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_drrsettinggocollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_ct2densitygocollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_drrsettinggo.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_drrsettinggocollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_cornerinfographicobjectconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_change_ct2densitytable_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_dose_mesh_gocollectionconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_dose_mesh_graphicobjectcollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_remove_registration_relationship_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_updateshadedsurfaceGoOperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_change_all_poi_visibility_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_crosshair_update_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_rl_render_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_crosshair_update_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_clear_hot_cold_spots_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_graphicobjectconverterfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_refreshdoselineoperation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_series_table_cache_graphic_object.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_series_table_cache_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_series_table_render_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_calc_jump_to_step_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gl_program.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_3d_window_render_strategy.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_beam_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_dose_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mpr_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_phong_shading_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_transparency_scene_renderer.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_voi_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_3d_window_pan_zoom_rotate_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gpu_marching_cubes.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_query_current_mpr_slice_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_gallery_query_current_mpr_slice_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_gallery_volume4d_mpr_renderstrategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_bev_window_tansparency_render_strategy.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_front_depth_peeling_algorithm.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_transparency_rendering_algorithm.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_transparency_rendering_algorithm_program.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_volume_cube_transparency_rendering_node.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_dual_depth_peeling_algorithm.cpp">
+      <Filter>Source Files\render_strategy\transparency_rendering</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mpr_algorithm.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_easyplan_drrgocollection.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_easyplan_drrcollection_graphicobject_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_easyplan_loadimage_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_deletedrrimage_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="graphic_object\tps_rl_contour_set_graphic_object.cpp">
+      <Filter>Source Files\graphic_object</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_contour_set_graphic_object_converter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="render_strategy\tps_rl_mpr_roi_render_strategy.cpp">
+      <Filter>Source Files\render_strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="operation\tps_rl_update_graphic_object_operation.cpp">
+      <Filter>Source Files\render_operation</Filter>
+    </ClCompile>
+    <ClCompile Include="go_converter\tps_rl_shaded_voi_goconverter.cpp">
+      <Filter>Source Files\graphic_object_converter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamgocollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprpageturn_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_bevbeamrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_segmentgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_addbeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamcollectiongraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volumegraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_graphicobjectconverterfactory.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatebeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dosegraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_refreshdoseoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatecontouroperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voigraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voigraphicobjectcollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voirenderingcachegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voigraphicobejctconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voigraphicobejctcollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_addvoioperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poigraphicobjectcollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poigraphicobjectcollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poigraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_addpoioperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poigraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprdoserenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprdosegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_shadedvoistrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprzoompanwindowing_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_deleteoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voirenderingcachegocollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_editsetuppoigraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_setupptcrosshairstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatepoioperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatesetupcrosshairoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poitextrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatesetupcrosshairoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poitextrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_setupptcrosshairstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_editsetuppoigraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_scalerulerstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dosegridboundarygraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dosegridboundarygraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dosegridboundaryrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_editdosegridboundaryoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_fusiongraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_fusionrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_rotateshadedsurfaceoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_showdosegridboundaryoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_switchsegmentoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_wedgegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_wedgegraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatevrdisplayoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatelimitregionoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_refreshfusionfactoroperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatedrrdisplayoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_navigatecuberenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_nudgeshapegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_backgroundrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_bevdisplayoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_colorspectrarenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_pseudocoloroperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_activechesseditoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_editchessboardooperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_refreshfusiontypeoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_fusionchessgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voieditingredoundooperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatevoidisplayoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatevoioperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_cornertextinforenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_normalgroupcollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_highlightbeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_normalgroupcollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_landmarkgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_pageturnformovieoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_preview_voi_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_textoverlaygraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_rulertextgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatevolumeoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_manualremovetablegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_removetableoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatefusionregionoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_fusiongraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_ct2density_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_hittest_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_movement_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_rotate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dummygraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dummyrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrfluencemapswitchoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_mode_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_placecamerafrombeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voi3d_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_statecontrol_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mascot_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mascot_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_table_box_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mpr_hot_spots_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_hot_spots_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_hot_spots_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_pixelbufferbmpalphawindowingconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_doselineobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_doselineobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_pixelbufferbmpalphawindowingconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_poi_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_corner_info_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_simplebeamrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamtemplategraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_simplebeamgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beamtemplategraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_refresh_registration_result_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_antialiased_circle_painter.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_chess_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_simplebeamgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatebeamtemplatepreviewoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatebeamtemplatepreviewoperation.h" />
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_shaded_surface_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_shaded_voi_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_shadedsurface_zoom_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_tablelineobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beam_view_camera_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_simulator_mlcrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drr_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_reset_drr_windowing_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_applicator_graphic_object.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_applicator_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_block_graphic_object.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_block_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_ezcameragraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_block_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_setrulervisibility_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_setdrrvisibility_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_setmlctransparency_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_graphicobjecttypedefines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatelightsettingoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mprreset_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_applicator_render_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_axialpageturn_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_smoothmesh_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drr_render_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_surfacecamera_graphicobject_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_bev_dose_shaded_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_mesh_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_update_mesh_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_imagetext_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_normal_group_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setpoirenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_addnormalgroupoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_normal_group_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\drr_gl_generator.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_drrgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_measuregraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume4d_graphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mpr_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measuregraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measurevaluegraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_textgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_beamcollectiongraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplandrrgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplanmeasuregraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_camera_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_colortable_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_cornerinfographicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_crosshair_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measuregraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measurevaluegraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_textgraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_volumegraphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_vr_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_deleteisocenter_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_deletenormpoint_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_measureangle_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_measuredistance_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_modifybeam_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_resetimage_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setinverse_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setisocenter_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setnormpoint_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setpan_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setrotation_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setwindowing_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_setzoom_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplanchangebeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplandeletebeamoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_crosshair_mode_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_crosshair_movement_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_crosshair_rotate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_editdistance_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_edittext_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measureangle_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measuredistance_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measurehittest_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprcornerinfo_visible_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprpageturn_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprrotate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprupdatecornerinfo_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_mprzoompanwindowing_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_text_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_vrrotate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_measureanglestrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_measuredistancestrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplandrrrenderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measureanglestrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measureanglevaluestrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_measuredistancestrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_textstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_vr_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume4d_bev_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume4d_mpr_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume4d_change_current_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume4d_graphicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatesegmentoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrpseudocolorgraphicobject.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_bevreset_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_fluence_map_render_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_switch_bev_dispay_mode_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_edit_arc_beam_cache_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_camera_graphic_object.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_set_drr_down_sample_rate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_ct2density_graphicobjectcollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updatedrrsettingoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\StdAfx.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_ct2densitygocollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrsettinggo.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrsettinggocollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_drrsettinggocollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_cornerinfographicobjectconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_change_ct2densitytable_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_mesh_gocollectionconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_mesh_graphicobjectcollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_clear_mesh_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_remove_registration_relationship_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_updateshadedsurfaceGoOperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_change_all_poi_visibility_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_crosshair_update_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_render_helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_crosshair_update_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_clear_hot_cold_spots_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_refreshdoselineoperation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_series_table_cache_graphic_object.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_series_table_cache_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_series_table_render_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_update_graphic_object_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_calc_jump_to_step_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gl_program.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_move_voi_table_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_3d_window_render_strategy.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_beam_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dose_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mpr_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_phong_shading_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_transparency_rendering_node_interface.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_transparency_scene_renderer.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_voi_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gpu_marching_cubes.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_3d_window_pan_zoom_rotate_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_query_current_mpr_slice_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_query_current_mpr_slice_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_gallery_volume4d_mpr_renderstrategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_transparency_rendering_algorithm_program.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_dual_depth_peeling_algorithm.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_front_depth_peeling_algorithm.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_bev_window_tansparency_render_strategy.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_volume_cube_transparency_rendering_node.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_transparency_rendering_algorithm.h">
+      <Filter>Header Files\render_strategy\transparency_rendering</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mpr_algorithm.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="tps_rl_shaders.h">
+      <Filter>Header Files\render_strategy_shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_loadimage_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_drrgocollection.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_easyplan_drrcollection_graphicobject_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_deletedrrimage_operation.h">
+      <Filter>Header Files\render_operation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_contour_set_graphic_object.h">
+      <Filter>Header Files\graphic_object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_contour_set_graphic_object_converter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_mpr_roi_render_strategy.h">
+      <Filter>Header Files\render_strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsRenderLibrary\tps_rl_shaded_voi_goconverter.h">
+      <Filter>Header Files\graphic_object_converter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{f1571af6-b173-42b7-b52e-b37929eb5a1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{33f6c465-4f5e-4294-a351-416ccad67b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphic_object">
+      <UniqueIdentifier>{f581e33b-5a7a-4f1a-bb03-1b3f1f7be445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render_strategy">
+      <UniqueIdentifier>{7aca9289-ba04-443a-83c1-ffad76eaded1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render_operation">
+      <UniqueIdentifier>{a05fed29-6ca4-46c4-b5a2-a609660c6845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_strategy">
+      <UniqueIdentifier>{4d36bfb1-4d6e-42a0-b878-2adc28e8e372}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_operation">
+      <UniqueIdentifier>{b294eac6-0103-4c2d-80f7-12180a11d0cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\graphic_object_converter">
+      <UniqueIdentifier>{eb61904b-7c51-4f9e-bdba-c5d1b295af25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphic_object_converter">
+      <UniqueIdentifier>{ce95e8a7-0f00-4809-a182-4583d5c56e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\graphic_object">
+      <UniqueIdentifier>{831db522-dd2d-48ec-840a-51e12b223efc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{96625ad0-af14-457c-9c22-a38a8511d359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render_strategy_shaders">
+      <UniqueIdentifier>{61d9e6d1-81c2-4896-b537-576195f16fe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_strategy_shaders">
+      <UniqueIdentifier>{8d12f6f9-33e8-404a-a5f7-bf393debc792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\render_strategy\transparency_rendering">
+      <UniqueIdentifier>{9bad07e5-decd-4ef5-b566-1d2612c859d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\render_strategy\transparency_rendering">
+      <UniqueIdentifier>{eb9369d2-ba14-43c0-834a-97160d7244e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsRenderLibrary.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\tps_rl_shader_antialiased_circle.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_antialiased_circle.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_drr.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_drr.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_drr_face.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_drr_face.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_dual_peeling_init.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_dual_peeling_peel.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_dual_peeling_peel.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_fluence_map.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_fluence_map.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_dose_line.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_dose_line.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_phong_shading.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_phong_shading.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_calculate_frag_color.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_test_texture.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_test_texture.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_fixed_vertex_shader.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_rect_texture_mapping.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_gpu_marching_cubes.comp">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_gpu_marching_cubes_preprocessing.comp">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_data_smoothing.comp">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_casting.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_casting.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_3d.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_mpr_3d.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_dual_peeling_final.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_dual_peeling_init.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_copy_texture.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_copy_texture.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_final.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_final.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_init.frag">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+    <None Include="shaders\tps_rl_shader_front_peeling_init.vert">
+      <Filter>Source Files\render_strategy_shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

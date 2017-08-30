@@ -1,0 +1,7 @@
+import "rt_tps_ct2densitytable.proto";
+package tps.proto;
+
+message RT_TPS_CT2DensityTableList
+{
+	repeated RT_TPS_CT2DensityTable tableList = 1;
+}

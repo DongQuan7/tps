@@ -1,0 +1,33 @@
+package tps.proto;
+ 
+message RT_TPS_OptOutput
+{
+	optional string ngUid = 1;
+	optional int32 iterationNumber = 2;
+	optional float iterationResult = 3;
+	optional float progressValue = 4;
+	optional float ngMU = 5;
+	optional int32 ngSegmentCount = 6;
+	optional int32 timeLeft = 7;
+	optional int32 timeDelived = 8;
+    optional RT_TPS_EudValueList eudValue = 9;
+    optional int32 optReturnValue = 10;
+	optional RT_TPS_ObjectValueList objectValue = 11;
+    optional int32 algstatus = 12;
+}
+
+message RT_TPS_OptResultValue
+{
+  required string optUid = 1;
+  required float resultValue = 2;
+}
+
+message RT_TPS_EudValueList
+{
+	repeated RT_TPS_OptResultValue eudValuelist = 1;
+}
+
+message RT_TPS_ObjectValueList
+{
+	repeated RT_TPS_OptResultValue objectValuelist = 1;
+}

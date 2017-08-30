@@ -1,0 +1,17 @@
+
+package tps.proto;
+message RtTpsProtoBeamOperate
+{
+	required string beam_uid								= 1;
+	optional string normal_group_uid						= 2;
+	optional string beam_name								= 3;
+	optional int32 beam_operate_type                        = 4;
+	optional int32 beam_delete_reason_type                  = 5;
+	repeated int32 beam_modify_typelist  					= 6;
+}
+
+message RtTpsProtoRepeatedBeamOperate
+{
+	repeated RtTpsProtoBeamOperate beamOperateList		= 1;
+}
+

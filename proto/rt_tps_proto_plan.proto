@@ -1,0 +1,57 @@
+import "rt_tps_proto_normalizationgroup.proto";
+import "rt_tps_proto_poi.proto";
+import "rt_tps_proto_doselinesetting.proto";
+import "rt_tps_proto_doseline.proto";
+package tps.proto;
+message RtTpsProtoPlan
+{
+	required string planUID											= 1;
+	optional string planName										= 2;
+	optional float bodyThickness									= 3;
+	optional string phantomUID										= 4;
+	optional string planner											= 5;
+	optional int32 planSourceType									= 6;
+	optional string rtImageUID										= 7;
+
+	optional float doseGridSpacingY									= 8;
+	optional float doseGridSpacingZ									= 9;
+	optional float doseGridStartX									= 10;
+	optional float doseGridStartY									= 11;
+	optional float doseGridStartZ									= 12;
+	optional string courseUID										= 13;
+	optional string seriesUID										= 14;
+	repeated RtTpsProtoNormalizationGroup normalizationGroupList	= 15;
+	repeated RtTpsProtoPoi poiList									= 16;
+	optional int32 isApproved										= 17;
+	optional float doseGridSpacingX									= 18;
+
+	// DoseLineSetting
+	optional float specifiedDose									= 19;
+	optional int32 renderMode										= 20;
+	optional float transparency										= 21;
+	optional float transparency3D									= 22;
+	optional bool enableSkinDoseView								= 23;
+	optional float maxSkinDose										= 24;
+	optional int32 displayMode										= 25;
+	optional int32 hundredPercentDefinition							= 26;
+
+	// DoseLine
+	optional float doseGridSizeZ									= 27;
+	optional float maxDose											= 28;
+	optional bool isIgnoreUpdateMaxDose								= 29;
+	repeated RtTpsProtoDoseLine doseLineList						= 30;
+	optional float doseGridSizeX									= 31;
+	optional float doseGridSizeY									= 32;
+	optional bool isDoseValid										= 33;
+
+	// Patient Position
+	optional string patientPosition									= 34;
+	
+	optional string planDescription	                                = 35;
+	optional string setupPoiUid	                                	= 36;
+}
+
+message RtTpsProtoRepeatedPlan
+{
+	repeated RtTpsProtoPlan planList 	= 1;
+}

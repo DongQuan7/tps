@@ -1,0 +1,15 @@
+package tps.proto;
+message RtTpsProtoDoseLine
+{
+    required string doseLineUID				= 1;
+	optional float doseRatio				= 2;
+	repeated float doseLineColor			= 3;
+	optional bool isVisible					= 4;
+	optional bool isVisible3D				= 5;
+	optional string planUID					= 6;
+}
+
+message RtTpsProtoRepeatedDoseLine
+{
+	repeated RtTpsProtoDoseLine doseLineList	= 1;
+}

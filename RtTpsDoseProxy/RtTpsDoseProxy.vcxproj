@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{476291CA-E8C7-4CE2-8C91-200CDEC3CF86}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RtTpsDoseProxy</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin_debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;_DEBUG;_WINDOWS;_USRDLL;RTTPSDOSEPROXY_EXPORTS;TPS_DP_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4091;4503;4996;4127;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>RtAlgDataLayer.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;McsfFileParser.lib;McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;McsfLogger.lib;McsfDicomConvertor.lib;McsfDataHeader.lib;RtTpsROIUtility.lib;RtAlgOptFramework.lib;RtAlgDoseOptimizerFactory.lib;RtAlgCommon.lib;RtAlgDoseCalculation.lib;RtTpsDatabaseWrapper.lib;RtTpsCertifiedLib.lib;RtTpsAlgorithmProxy.lib;RtAlgCommission.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;..\..\..\..\UIH\lib_$(configuration)\rt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;NDEBUG;_WINDOWS;_USRDLL;RTTPSDOSEPROXY_EXPORTS;TPS_DP_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4091;4503;4996;4127;4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>RtAlgDataLayer.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;McsfFileParser.lib;McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;McsfLogger.lib;McsfDicomConvertor.lib;McsfDataHeader.lib;RtTpsROIUtility.lib;RtAlgDoseCalculation.lib;RtAlgOptFramework.lib;RtAlgDoseOptimizerFactory.lib;RtAlgCommon.lib;RtTpsDatabaseWrapper.lib;RtTpsCertifiedLib.lib;RtTpsAlgorithmProxy.lib;RtAlgCommission.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;..\..\..\..\UIH\lib\rt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="accessory_chunk_converter.cpp" />
+    <ClCompile Include="accessory_converter.cpp" />
+    <ClCompile Include="beam_converter.cpp" />
+    <ClCompile Include="block_converter.cpp" />
+    <ClCompile Include="commissioned_unit_converter.cpp" />
+    <ClCompile Include="contour_converter.cpp" />
+    <ClCompile Include="dosegrid_converter.cpp" />
+    <ClCompile Include="dvh_converter.cpp" />
+    <ClCompile Include="enum_converter.cpp" />
+    <ClCompile Include="goldenstt_converter.cpp" />
+    <ClCompile Include="image3d_converter.cpp" />
+    <ClCompile Include="kernel_data_converter.cpp" />
+    <ClCompile Include="kernel_data_list_converter.cpp" />
+    <ClCompile Include="kernel_weight_converter.cpp" />
+    <ClCompile Include="machine_converter.cpp" />
+    <ClCompile Include="mcphocommissioned_unit_converter.cpp" />
+    <ClCompile Include="measureprofile_converter.cpp" />
+    <ClCompile Include="mlc_shape_converter.cpp" />
+    <ClCompile Include="normgroup_converter.cpp" />
+    <ClCompile Include="optgoal_converter.cpp" />
+    <ClCompile Include="poi_converter.cpp" />
+    <ClCompile Include="segment_converter.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tps_dp_algcommissionproxy.cpp" />
+    <ClCompile Include="tps_dp_alg_converter_common.cpp" />
+    <ClCompile Include="tps_dp_doseproxy.cpp" />
+    <ClCompile Include="tps_dp_optnotifier.cpp" />
+    <ClCompile Include="tps_dp_optproxy.cpp" />
+    <ClCompile Include="voi_converter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_algcommissionproxy.h" />
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_alg_converter_common.h" />
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_defs.h" />
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_doseproxy.h" />
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_optobserver.h" />
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_optproxy.h" />
+    <ClInclude Include="accessory_chunk_converter.h" />
+    <ClInclude Include="accessory_converter.h" />
+    <ClInclude Include="beam_converter.h" />
+    <ClInclude Include="block_converter.h" />
+    <ClInclude Include="commissioned_unit_converter.h" />
+    <ClInclude Include="contour_converter.h" />
+    <ClInclude Include="dosegrid_converter.h" />
+    <ClInclude Include="dvh_converter.h" />
+    <ClInclude Include="enum_converter.h" />
+    <ClInclude Include="goldenstt_converter.h" />
+    <ClInclude Include="image3d_converter.h" />
+    <ClInclude Include="kernel_data_converter.h" />
+    <ClInclude Include="kernel_data_list_converter.h" />
+    <ClInclude Include="kernel_weight_converter.h" />
+    <ClInclude Include="machine_converter.h" />
+    <ClInclude Include="mcphocommissioned_unit_converter.h" />
+    <ClInclude Include="measureprofile_converter.h" />
+    <ClInclude Include="mlc_shape_converter.h" />
+    <ClInclude Include="normgroup_converter.h" />
+    <ClInclude Include="optgoal_converter.h" />
+    <ClInclude Include="poi_converter.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="segment_converter.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tps_dp_optnotifier.h" />
+    <ClInclude Include="voi_converter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsDoseProxy.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

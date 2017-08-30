@@ -1,0 +1,17 @@
+import "rt_tps_proto_doseline.proto";
+package tps.proto;
+message RtTpsProtoDoseLineTemplate
+{
+	required string doseLineTemplateUID						= 1;
+	optional string doseLineTemplateName					= 2;
+	optional string doseLineTemplateDescription				= 3;
+	optional int32 displayMode                              = 4;
+	optional int32 hundredPercentDefinition                 = 5;
+	optional double specifiedDose                           = 6;
+	repeated RtTpsProtoDoseLine doseLineList				= 7;
+}
+
+message RtTpsProtoRepeatedDoseLineTemplate
+{
+	repeated RtTpsProtoDoseLineTemplate doseLineTemplateList	= 1;
+}

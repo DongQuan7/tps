@@ -1,0 +1,152 @@
+package ms.proto;
+
+
+message RT_MS_Convolution
+{
+     optional float diamOne = 1;
+	 optional float diamTwo = 2;
+     optional float srcRatio = 3;
+	 optional float transmission = 4;
+	 optional float psd = 5;
+	 optional float srcDepth = 6;
+	 optional float srcAtten = 7;
+	 optional float sddXJaw = 8;
+	 optional float sddYJaw = 9;
+	 optional float normTenMultiTen = 10;
+	 
+	 optional float xk0 = 11;
+	 optional float xk1 = 12;
+	 optional float xk2 = 13;
+	 optional float yk0 = 14;
+	 optional float yk1 = 15;
+	 optional float yk2 = 16;
+	
+	 optional bool  electronContaminationFlag = 17;
+	 optional float electronMaxDepth = 18;
+     optional float surfaceDose = 19;
+	 optional float depthCoefficientK = 20;
+	 optional float offaxisCoefficientA = 21;
+	 optional float df = 22;
+	 optional float sf = 23;
+	 optional float cOne = 24;
+	 optional float cTwo = 25;
+	 optional float cThree = 26;
+	 
+	repeated RT_MS_PDDSpectrum spectrumList = 27;
+	repeated RT_MS_InFieldOffaxisVector inFieldOffaxisVector  = 28;
+	
+	repeated RT_MS_PhysicalWedgeField physicalWedgeFieldList = 29;
+	repeated RT_MS_VirtualWedgeInfo virtualWedgeInfoList = 30;
+	
+     optional string commissionUID = 31;
+	 optional string accName = 32;
+	 optional string accessoryUID = 33;
+	 optional string wedgeId = 34;
+	 optional int32 algType = 35;
+	 
+	 optional float pddMuBase = 36;
+	 optional float pddDmumx = 37;
+
+     optional string mudatax = 38;
+     optional string ddmudr = 39;
+     optional string mudatay = 40;
+     optional string dmudatay = 41;
+     optional string outputmuy = 42;
+     optional float dmudr = 43;
+}
+
+message RT_MS_PDDSpectrum
+{
+
+    optional string uid0 = 1;
+	optional string uid40 = 2;
+	optional int32 energy0 = 3;
+	optional int32 energy40 = 4;
+    optional float kernelWeight0 = 5;
+	optional float kernelWeight40 = 6;
+	optional int32 fieldSize = 7;
+}
+
+message RT_MS_InFieldOffaxisVector
+{
+	optional string uid = 1;
+	optional float radius = 2;
+	optional float offaxisRatio = 3;
+}
+
+message RT_MS_ConvolutionContourVerter
+{
+    optional string uid = 1;
+    optional float ContourVerterx = 2;
+	optional float ContourVertery = 3;
+}
+
+message RT_MS_PhysicalWedgeField
+{
+    optional string wedgeUID = 1;
+    optional string wedgeId = 2;
+	optional string wedgeType = 3;
+	optional float  mu = 4;
+	optional float dmudx = 5;
+    optional float dmudr = 6;
+	optional float dmuda = 7;
+	optional float hvlSlope = 8;
+	
+	optional string CarrierUDI = 9;
+	optional float  Carriermu = 10;
+	optional float Carrierdmudx = 11;
+    optional float Carrierdmudr = 12;
+	optional float Carrierdmuda = 13;
+	optional float CarrierhvlSlope = 14;
+	
+    optional float wedgeThick = 15;
+	optional float carrierThick = 16;
+	
+    repeated RT_MS_ConvolutionContourVerter weightContourVerterList = 17;
+	repeated RT_MS_ConvolutionContourVerter carrierContourVerterList = 18;
+	
+	optional string contourUID1 = 19;
+	optional string contourUID2 = 20;
+	optional string parentUID = 21;
+	optional int32 algType = 22;
+	optional float density = 23;
+}
+
+
+message RtTpsProtoRepeatedPhysicalWedgeField
+{
+    repeated RT_MS_PhysicalWedgeField physicalwedgefieldlist	= 1;
+}
+	
+message RT_MS_VirtualWedgeInfo
+{
+    optional string parentUID = 1;
+    optional string virtualUid = 2;
+	optional string goldenUID = 3;
+	repeated RT_MS_VirtualWedgeField virtualWedgeFieldList = 4;
+	optional int32  algType =5;
+}
+
+message RtTpsProtoRepeatedVirtualWedgeInfo
+{
+    repeated RT_MS_VirtualWedgeInfo virtualwedgeinfolist	= 1;
+}
+	
+message RT_MS_VirtualWedgeField
+{
+	 optional string  uid = 1;
+     optional float  collimatorX1Position = 2;
+	 optional float collimatorX2Position = 3;
+     optional float relativeMU = 4;
+	 optional float correctionFactor = 5;
+	 
+}
+
+
+
+
+
+
+
+
+

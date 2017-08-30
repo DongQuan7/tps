@@ -1,0 +1,10 @@
+package tps.proto;
+
+message RT_TPS_CONTOUR_SLICES
+{
+	optional int32 first_slice = 1;
+    optional int32 second_slice = 2;
+	required string voi_uid = 3;
+	optional int32 edit_mode = 4;
+	optional bool isReplace = 5;
+}

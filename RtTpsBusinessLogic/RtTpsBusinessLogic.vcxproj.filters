@@ -1,0 +1,726 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\commands">
+      <UniqueIdentifier>{888029af-7efa-48ba-9d74-edc3b01b1ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\commands">
+      <UniqueIdentifier>{b0389569-0e06-4bfd-9c0f-a3bcaa97539c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_business_logic_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_dosecalculationimpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_remove_registration_relationship.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_mpr_show_fusion.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_clear_data_manager.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_admin_startup.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_auto_contouring.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_normgroup.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_delete_plans.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_delete_voi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_create_3d.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_delete.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_add.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_nudge.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_get_proto_patient_tree.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_load_patient_tree.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_smart_contour.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_registration_region.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_delete.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_save_objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_voi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_change_ct2densitytable.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_load_objects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_registration_result.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_jump.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_getcurrentslice.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_change_evaluation_order.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_merge_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_compare_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_generate_mesh.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_start_registration.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_update_attribute.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_manset_density.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_volume4d_change_current.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_volume_change_slice.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_deleteeasyplan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easy_plan_beam_delete.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_updategridsize.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_updatedosegridboundary.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_opt_observer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_merge_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easy_plan_beam_create.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_create.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_calculatedose.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_set_isocenter.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_load_image.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_operatecontourslices.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_selectcontourslices.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_change_selected_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_manual_registration.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_exportslicedose.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_normgroup.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_beam_attributes.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_setmlctransparency.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_delete_image.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_delete_poi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_insert_poi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_dose_volume_value.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_hot_spots.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_deleteqaplan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_movevoi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_pancurrentslicecontour.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_smooth_voi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_redo_undo_subvolume.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_nudge_aperture.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_remove_small_contours.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_jump_to.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_normgroup.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_plan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_beam_segment_update.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_take_igrt.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_load_patient.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_rotate_arc_beam_on_mpr.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_update_attribute.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_rotate_imrt_beam_on_mpr.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_addplan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_beam_block_update.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_draw_shapes.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_smart_contour_flying.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="tps_bl_mprprinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tps_bl_printerbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_getssd.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_copyphantomtoqa.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_preview_page_turn.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_switch_table.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_table.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_planqa_createnormalgroup.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_get_proto_patient_tree.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_save_voi_as_table.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_duplicate_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_showgrid.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_get_density_overlapped_voi_list.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_bolus_add.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_volume_change_slice.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_add_roi_advanced_parameter_structrues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_interpolate_voi.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_normgroup_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadpatientpartial.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadplan.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadseries.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_opposite_beam.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_update.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_internal_patient.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_loadrtimageinfo.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_roi_via_new_contour.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_helper.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_roi_add.h">
+      <Filter>Header Files\commands</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_dosecalculationimpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller_voi_advanced.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_mpr_show_fusion.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_clear_data_manager.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_admin_startup.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_auto_contouring.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_create_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_create_normgroup.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_create_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_delete_plans.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_delete_voi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_poi_create_3d.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_poi_delete.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_add.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_nudge.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_smart_contour.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_get_proto_patient_tree.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_load_patient_tree.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_remove_registration_relationship.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_edit_registration_region.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_phantom_delete.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_save_objects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_approve_voi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_change_ct2densitytable.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_load_objects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_approve_registration_result.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_poi_jump.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_getcurrentslice.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller_play_movie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_change_evaluation_order.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_merge_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_compare_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_generate_mesh.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_poi_update_attribute.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_start_registration.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_manset_density.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_volume4d_change_current.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_volume_change_slice.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_deleteeasyplan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_phantom_create.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easy_plan_beam_delete.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_updategridsize.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_updatedosegridboundary.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_opt_observer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_create_merge_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easy_plan_beam_create.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_update_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_calculatedose.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_set_isocenter.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_load_image.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_update_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_operatecontourslices.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_selectcontourslices.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_change_selected_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_manual_registration.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_exportslicedose.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_edit_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_edit_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_edit_normgroup.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_update_beam_attributes.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_setmlctransparency.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_delete_image.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_delete_poi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_update_insert_poi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_dose_volume_value.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_hot_spots.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_deleteqaplan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_movevoi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_pancurrentslicecontour.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_smooth_voi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_redo_undo_subvolume.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_nudge_aperture.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_remove_small_contours.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_jump_to.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller_commission.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_approve_normgroup.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_approve_plan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_beam_segment_update.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_take_igrt.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_gallery_load_patient.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_rotate_arc_beam_on_mpr.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_rotate_imrt_beam_on_mpr.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_update_attribute.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_addplan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_beam_block_update.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_draw_shapes.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_voi_smart_contour_flying.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_mprprinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_printerbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_getssd.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_copyphantomtoqa.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_preview_page_turn.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_switch_table.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_update_table.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_planqa_createnormalgroup.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_gallery_get_proto_patient_tree.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_save_voi_as_table.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_duplicate_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_showgrid.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller_commission_ex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_get_density_overlapped_voi_list.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_bolus_add.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_gallery_volume_change_slice.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_interpolate_voi.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_update_normgroup_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_loadpatientpartial.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_loadplan.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_loadseries.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_opposite_beam.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_phantom_update.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_create_internal_patient.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_business_logic_controller_commission_template.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_easyplan_loadrtimageinfo.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_edit_roi_via_new_contour.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_roi_add.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_helper.cpp">
+      <Filter>Source Files\commands</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+import "rt_tps_proto_poi.proto";
+import "rt_tps_proto_mouse_action.proto";
+package tps.proto;
+
+message RtTpsProtoPoiAction
+{
+    required RtTpsProtoPoi 	     poi 	= 1;
+    required RtTpsProtoMouseAction mouse	= 2;
+}

@@ -1,0 +1,7 @@
+package tps.proto;
+
+message RtTpsProtoHeader
+{
+    required int32 code = 1; 		// 0: success, -1: failure
+    optional int32 innerCode = 2;	// detailed code
+}

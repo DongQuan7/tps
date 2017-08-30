@@ -1,0 +1,16 @@
+package tps.proto;
+
+message RT_TPS_CornerText_BEV
+{
+    optional string beamname = 1;
+	optional double beamweight = 2;
+	optional double beammu = 3;
+	optional int32 displaycontent = 4; // 0, bev; 1, cev;
+	optional double windowwidth = 5;
+	optional double windowcenter = 6;
+	optional double zoomfactor = 7;
+	optional double segmentindex = 8;
+	optional double segmentweight = 9;
+	optional double segmentmu = 10;
+	optional double leafindex = 11;
+}

@@ -1,0 +1,19 @@
+package ms.proto;
+
+
+message RT_MS_WedgeFactorSettingInfo
+{
+ optional string accessoryUID = 1;
+ optional float fieldSizeX = 2;
+ optional float fieldSizeY = 3;
+ optional float value = 4;
+ optional string accessoryName = 5;
+}
+
+message RT_MS_WedgeFactorSettingInfoList
+{
+  optional string uid = 1;
+  optional string parentUID = 2;
+  repeated RT_MS_WedgeFactorSettingInfo wedgeFactorList = 3;
+  optional float wedgefactordepth = 4;
+}

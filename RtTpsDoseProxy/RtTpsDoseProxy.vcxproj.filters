@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\algdata_converter">
+      <UniqueIdentifier>{d7b4d017-2099-4208-8eea-22588651dfe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\algdata_converter">
+      <UniqueIdentifier>{ef67214f-b078-42c3-aea0-366974c4bc48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tps_dp_doseproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_dp_optproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_dp_optnotifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="poi_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="voi_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="beam_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="dosegrid_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="normgroup_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="mlc_shape_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="segment_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="image3d_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="dvh_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="optgoal_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="contour_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="machine_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="commissioned_unit_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="accessory_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="accessory_chunk_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_weight_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_data_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="kernel_data_list_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="mcphocommissioned_unit_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="block_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="goldenstt_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_dp_algcommissionproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="measureprofile_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enum_converter.cpp">
+      <Filter>Source Files\algdata_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_dp_alg_converter_common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_doseproxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_optproxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tps_dp_optnotifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_optobserver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="poi_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="voi_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="beam_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="dosegrid_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="normgroup_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="mlc_shape_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="segment_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="image3d_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="dvh_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="optgoal_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="contour_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="machine_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="commissioned_unit_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="accessory_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="accessory_chunk_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel_weight_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel_data_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel_data_list_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="mcphocommissioned_unit_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="block_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="goldenstt_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_algcommissionproxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="measureprofile_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsDoseProxy\tps_dp_alg_converter_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enum_converter.h">
+      <Filter>Header Files\algdata_converter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsDoseProxy.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

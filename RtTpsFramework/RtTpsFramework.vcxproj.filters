@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{30e40bdf-12f3-4f53-8f5a-fa4eb2788893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9c962b6d-d5a5-4075-8e91-22e06019b711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{798203ea-e0e3-48ff-b614-e839e5965a33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\coordinate_system">
+      <UniqueIdentifier>{6c2c1968-9a23-44ae-bdec-d51273b5fb9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\coordinate_system">
+      <UniqueIdentifier>{5023b8ea-a3bf-41fe-bf4b-b114f6cd8fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\3d_system">
+      <UniqueIdentifier>{112c8777-bbae-4d15-9696-f0a4c3ea67de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3d_system">
+      <UniqueIdentifier>{6bca828a-8bc4-4978-b8e9-ddf73566f366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\redo_undo">
+      <UniqueIdentifier>{fb1d41e8-f79e-4f12-a607-16905d9b1f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\redo_undo">
+      <UniqueIdentifier>{bccf20c4-17b9-4d9a-8b6a-f841904d26f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\entity">
+      <UniqueIdentifier>{2a502a40-5375-40c7-8121-aaef242ae2a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\entity">
+      <UniqueIdentifier>{094d2daa-63d0-4c5e-8216-051457ae6b9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_coordinatesystemnode.h">
+      <Filter>Header Files\coordinate_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_coordinatesystemtree.h">
+      <Filter>Header Files\coordinate_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_ieccoordinatesystem.h">
+      <Filter>Header Files\coordinate_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_arithmeticconverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_commandids.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_common_enums.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_commandmanager.h">
+      <Filter>Header Files\redo_undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_command.h">
+      <Filter>Header Files\redo_undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voiredoundocommandbase.h">
+      <Filter>Header Files\redo_undo</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_common_datastructure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_doselinedatastructure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voiedtingcache.h">
+      <Filter>Header Files\redo_undo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_beamstructure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voistructure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_petsuv_parameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_freetype2fontgenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_optimizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_progress.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphic_object_converter_factory_base.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_cpurenderstrategy.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_datasourcegroup.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_displaycache.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_rendercontrollerbase.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderobserver.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderproxybase.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_fire_operation.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_safelock.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjectbase.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjectconverterbase.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjecttypehelper.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_modelwarehouse.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_operationbase.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_operationprocessthread.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_active_responser_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderdefines.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_render_strategy_base.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_block_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_prepare_notifier.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_table.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_image3dentity.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_image2dentity.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_fluence_map_entity.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_states.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_mask.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_series_group4d.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_contour_set.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_signed_distance_field.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_volume_data.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_arithmetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_contour.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_roi_entity.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_tri_mesh.h">
+      <Filter>Header Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_composable_graphic_object.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_go_converter_parameter.h">
+      <Filter>Header Files\3d_system</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_coordinatesystemnode.cpp">
+      <Filter>Source Files\coordinate_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_coordinatesystemtree.cpp">
+      <Filter>Source Files\coordinate_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_ieccoordinatesystem.cpp">
+      <Filter>Source Files\coordinate_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_arithmeticconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_command.cpp">
+      <Filter>Source Files\redo_undo</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_commandmanager.cpp">
+      <Filter>Source Files\redo_undo</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_voiredoundocommandbase.cpp">
+      <Filter>Source Files\redo_undo</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_doselinedatastructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_common_enums.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_voiedtingcache.cpp">
+      <Filter>Source Files\redo_undo</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_beamstructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_voistructure.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_freetype2fontgenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_progress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_graphic_object_converter_factory_base.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_datasourcegroup.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_displaycache.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_rendercontrollerbase.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_renderobserver.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_renderproxybase.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_fire_operation.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_graphicobjectconverterbase.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_graphicobjecttypehelper.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_modelwarehouse.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_operationbase.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_operationprocessthread.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_render_strategy_base.cpp">
+      <Filter>Source Files\3d_system</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_block_buffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_prepare_notifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_error.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_fluence_map_entity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_image2dentity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_image3dentity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_mask.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_states.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_table.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_optimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_signed_distance_field.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_contour_set.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_contour.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_tri_mesh.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="tps_fw_roi_entity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsFramework.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

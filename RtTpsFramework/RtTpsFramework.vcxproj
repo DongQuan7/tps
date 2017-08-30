@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_active_responser_interface.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_arithmetic.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_arithmeticconverter.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_beamstructure.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_block_buffer.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_commandids.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_commandmanager.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_common_datastructure.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_common_enums.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_composable_graphic_object.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_contour.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_contour_set.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_coordinatesystemnode.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_coordinatesystemtree.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_defs.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_doselinedatastructure.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_error.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_fluence_map_entity.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_freetype2fontgenerator.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_go_converter_parameter.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphic_object_converter_factory_base.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_ieccoordinatesystem.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_image2dentity.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_image3dentity.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_mask.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_roi_entity.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_signed_distance_field.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_optimizer.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_petsuv_parameter.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_command.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_prepare_notifier.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_progress.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderdefines.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_render_strategy_base.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_series_group4d.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_states.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_table.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_tri_mesh.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voiedtingcache.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voiredoundocommandbase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_voistructure.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_cpurenderstrategy.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_datasourcegroup.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_displaycache.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_rendercontrollerbase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderobserver.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_renderproxybase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_safelock.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_fire_operation.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjectbase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjectconverterbase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_graphicobjecttypehelper.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_modelwarehouse.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_operationbase.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_operationprocessthread.h" />
+    <ClInclude Include="..\include\RtTpsFramework\tps_fw_volume_data.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tps_fw_contour.cpp" />
+    <ClCompile Include="tps_fw_contour_set.cpp" />
+    <ClCompile Include="tps_fw_fluence_map_entity.cpp" />
+    <ClCompile Include="tps_fw_image2dentity.cpp" />
+    <ClCompile Include="tps_fw_image3dentity.cpp" />
+    <ClCompile Include="tps_fw_mask.cpp" />
+    <ClCompile Include="tps_fw_roi_entity.cpp" />
+    <ClCompile Include="tps_fw_signed_distance_field.cpp" />
+    <ClCompile Include="tps_fw_states.cpp" />
+    <ClCompile Include="tps_fw_table.cpp" />
+    <ClCompile Include="tps_fw_tri_mesh.cpp" />
+    <ClCompile Include="tps_fw_arithmeticconverter.cpp" />
+    <ClCompile Include="tps_fw_block_buffer.cpp" />
+    <ClCompile Include="tps_fw_command.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tps_fw_commandmanager.cpp" />
+    <ClCompile Include="tps_fw_common_enums.cpp" />
+    <ClCompile Include="tps_fw_coordinatesystemnode.cpp" />
+    <ClCompile Include="tps_fw_coordinatesystemtree.cpp" />
+    <ClCompile Include="tps_fw_doselinedatastructure.cpp" />
+    <ClCompile Include="tps_fw_error.cpp" />
+    <ClCompile Include="tps_fw_freetype2fontgenerator.cpp" />
+    <ClCompile Include="tps_fw_graphic_object_converter_factory_base.cpp" />
+    <ClCompile Include="tps_fw_ieccoordinatesystem.cpp" />
+    <ClCompile Include="tps_fw_beamstructure.cpp" />
+    <ClCompile Include="tps_fw_optimizer.cpp" />
+    <ClCompile Include="tps_fw_prepare_notifier.cpp" />
+    <ClCompile Include="tps_fw_progress.cpp" />
+    <ClCompile Include="tps_fw_render_strategy_base.cpp" />
+    <ClCompile Include="tps_fw_voiedtingcache.cpp" />
+    <ClCompile Include="tps_fw_voiredoundocommandbase.cpp" />
+    <ClCompile Include="tps_fw_voistructure.cpp" />
+    <ClCompile Include="tps_fw_datasourcegroup.cpp" />
+    <ClCompile Include="tps_fw_displaycache.cpp" />
+    <ClCompile Include="tps_fw_rendercontrollerbase.cpp" />
+    <ClCompile Include="tps_fw_renderobserver.cpp" />
+    <ClCompile Include="tps_fw_renderproxybase.cpp" />
+    <ClCompile Include="tps_fw_fire_operation.cpp" />
+    <ClCompile Include="tps_fw_graphicobjectconverterbase.cpp" />
+    <ClCompile Include="tps_fw_graphicobjecttypehelper.cpp" />
+    <ClCompile Include="tps_fw_modelwarehouse.cpp" />
+    <ClCompile Include="tps_fw_operationbase.cpp" />
+    <ClCompile Include="tps_fw_operationprocessthread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsFramework.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A422DFB9-6D96-48C6-937C-2E7DB3D529D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Framework</RootNamespace>
+    <ProjectName>RtTpsFramework</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v100</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <UseOfAtl>false</UseOfAtl>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin_debug\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;ULIB;TPS_FW_EXPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Mcsf3DArithmetic.lib;McsfViewer3DArithmetic.lib;McsfViewer3DGraphicObject.lib;McsfViewer3DCommon.lib;McsfViewer3DModel.lib;McsfViewer3DScene.lib;McsfGeometry.lib;McsfLogger.lib;freetype250_D.lib;RtTpsDatabaseWrapper.lib;McsfAlgoAutoContour.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\rt;..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;TPS_FW_EXPORT;ULIB;TEST_PERFORMANCE_ON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\rt;..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Mcsf3DArithmetic.lib;McsfViewer3DArithmetic.lib;McsfViewer3DGraphicObject.lib;McsfViewer3DCommon.lib;McsfViewer3DModel.lib;McsfViewer3DScene.lib;McsfGeometry.lib;McsfLogger.lib;freetype250.lib;RtTpsDatabaseWrapper.lib;McsfAlgoAutoContour.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <BuildLog>
+      <Path>$(IntDir)\$(MSBuildProjectName).log</Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

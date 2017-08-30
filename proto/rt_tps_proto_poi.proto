@@ -1,0 +1,32 @@
+package tps.proto;
+message RtTpsProtoPoi
+{
+    required string poiUID				= 1;
+    optional string poiName				= 2;
+    optional int32 poiType				= 3;
+    repeated float poiColor				= 4;
+    optional bool isVisible				= 5;
+    optional int32 lockType				= 6;
+    optional float xCoordInPat			= 7;
+    optional float yCoordInPat			= 8;
+    optional float zCoordInPat			= 9;
+    optional float dose					= 10;
+    optional float xCoordInCol			= 11;
+    optional float yCoordInCol			= 12;
+    optional float pointDepth			= 13;
+	optional string seriesuid			= 14;
+	repeated RtTpsProtoPoiDoseInPlan poiDoseList = 15;
+}
+
+message RtTpsProtoRepeatedPoi
+{
+    repeated RtTpsProtoPoi poiList	= 1;
+}
+
+message RtTpsProtoPoiDoseInPlan
+{ 
+    optional string poiuid 				=1;
+    optional string planUID			 	=2;
+    optional float dose					=3;
+	optional int32 doseCalcMethod		=4; // 0: by dose engine 1: interpolated via dose grid 2: invalid
+}

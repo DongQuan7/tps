@@ -1,0 +1,258 @@
+package ms.proto;
+import "rt_ms_photonsmontecarlo.proto";
+
+message RT_MS_MachineSettingInfoList
+{
+repeated RT_MS_MachineConfigInfo machineSettingList = 1;
+
+}
+
+message RT_MS_CommissionList
+{
+  repeated RT_MS_CommissionInfo   machineCommissionInfo = 1;
+}
+
+message RT_MS_MachineConfigInfo
+{
+ optional RT_MS_MachineGeneral machineGeneralInfo = 1;
+ optional RT_MS_MachineGeometry machineGeometry = 2;
+ optional RT_MS_MachineJaw       machineJaw = 3;
+ optional RT_MS_MachineMLC       machineMLC = 4;
+ optional RT_MS_MachineAccessories    machineAccessories  = 5;
+ 
+ optional bool                        isApprove  = 6;
+ optional bool                        isActive = 7;
+ repeated RT_MS_CommissionInfo   machineCommissionInfo = 8;
+ optional bool                        isCrcValid = 9;
+}
+
+
+message RT_MS_MachineGeneral
+{
+    
+	optional string machineName = 1;
+    optional string manufactory= 2;
+    optional string DeviceID = 3;
+    optional string coordinationSystem = 4;
+	optional string date = 5;
+	optional string time = 6;
+	optional string byWho = 7;
+	optional string comments = 8;
+	optional string uid = 9;
+}
+
+message RT_MS_MachineGeometry
+{
+	optional float gantryAngleMin = 1;
+    optional float gantryAngleMax = 2;
+    optional float maxSpeedLimit = 3;
+    optional float sad = 4;
+    optional float  cwLimit = 5;
+	optional float  ccwLimit = 6;
+	
+	optional float collimatorLow = 7;
+	optional float collimatorHigh = 8;
+	
+	optional float lateralMotionMax = 9;
+	optional float lateralMotionMin = 10;
+	
+	optional float longitudeMotionMin = 11;
+	optional float longitudeMotionMax = 12;
+	optional float verticalMotionMax = 13;
+	optional float verticalMotionMin = 14;
+    optional float rTNMax = 15;
+	optional float rTNMIN = 16;
+	optional float minGantrySpeed_DegreeperSecond=17;
+}
+
+message RT_MS_MachineJaw
+{
+	optional bool  isXjaw = 1;
+    optional bool isYjaw = 2;
+    optional bool isXasym = 3;
+    optional bool isYasym = 4;
+	optional string leftJawLabel = 5;
+	optional string rightJawLabel = 6;
+    optional float  maxLeftJawPosition = 7;
+	optional float  minLeftJawPosition = 8;
+	
+	optional float maxRightJawPosition = 9;
+	optional float minRightJawPosition = 10;
+	
+	optional float lateralJawOutsideEdge = 11;
+	optional float lateralInsideJawEdge = 12;
+	
+	optional float sourceLateralJawDistance = 13;
+	optional float jawGap = 14;
+	optional float MaxJawSpeed = 15;
+	optional string topJawLabel = 16;
+	optional string bottomJawLabel = 17;
+	optional float maxTopJawPosition = 18;
+	
+	optional float minTopJawPosition = 19;
+	optional float maxBottomJawPosition = 20;
+	
+	optional float minBottomJawPosition = 21;
+	optional float longitudeJawOutsideEdge = 22;
+	
+	optional float longitudeJawInsideEdge = 23;
+	optional float sourceLongitudeJawDistance = 24;
+	
+	optional bool lateralTracking = 25;
+	optional bool longitudinalTranking = 26;
+	optional string note = 27;
+	optional bool isForceJawFollow = 28;
+}
+
+message RT_MS_PairInfo
+{
+     optional string pairUID =1;
+	 optional int32  pair =2;
+	 optional double leafPairs = 3;
+}
+
+
+message RT_MS_MachineMLC
+{
+    optional float sourceToMLCtopDistance = 1;
+    optional float minLeafJawOverlap = 2;
+    optional float minGap = 3;
+	optional float maxLeafSpeed = 4;
+	optional float minTipPosition = 5;
+    optional float  maxTipPosition = 6;
+	optional bool  leafInterdigitation = 7;
+	optional float maxLeafoutofCarriageDistance = 8;
+	optional int32   mlcDirection = 9;
+	optional int32 pairs = 10;
+    repeated RT_MS_PairInfo pairInfoList = 11;
+	optional int32 maxLeafAcc_mmPerSec2 = 12;
+}
+
+message RT_MS_CommissionInfo
+{ 
+    optional int32 radiationType = 1;
+    optional float energy = 2;
+    optional int32 flatteningFilterType = 3; 
+	
+    optional bool isConvolution = 4;
+    optional bool isPencilBeam = 5;
+    optional bool isMonteCarlo = 6;
+	
+    optional bool isDoseRateVarSupport = 7;
+	
+    optional bool isPlan2D = 8;                                       
+    optional bool isPlan3D = 9;
+    optional bool isPlanStepShoot = 10;
+    optional bool isPlanSlidingWindow = 11;
+    optional bool isPlanSimpleArc = 12;
+    optional bool isPlanConformalArc = 13;
+    optional bool isPlanVMATArc = 14;
+    optional bool isPlanBurstArc = 15;
+	
+    optional bool electornType = 16;
+	
+	repeated RT_MS_MachineBeamModeDoseRate doseRateListInfo= 17;
+	
+	optional bool isCheckedHalfProfile =18;
+	optional string commissionUID = 19;
+	optional string commissionName = 20;
+	optional bool   isApprove = 21;
+	
+	optional float calibrationFieldSizeX = 22;
+    optional float calibrationFieldSizeY = 23;
+    optional float calibrationDmax = 24;
+    optional float sSD = 25;
+    optional float lateral =26;
+    optional float depth =27;
+    optional string date =28;
+    optional string time =29;
+    optional string who =30;
+	
+	optional string uid = 31;
+	optional string ParentUID = 32;
+	
+	optional float penumbra = 33;
+	optional float blockattenuationfactor = 34;
+	repeated float trayFactorList = 35;
+	optional string phoCommissionUID = 36;
+	optional float norDepth = 37;
+	
+    optional float mlcFactor = 38;
+	optional float xJawFactor = 39;
+	optional float yJawFactor = 40;
+
+	optional RT_MS_PhotonMonteCarloInformation PhotonMonteCarloInfo = 41;
+	optional int32 mindoserate_mupermin = 42;
+}
+
+message RT_MS_MachineBeamModeDoseRate
+{
+    optional string doseRateUID = 1;
+    optional int32 doseRate = 2;
+	optional bool isDoseRateDefault = 3;
+}
+
+message RT_MS_MachineTray
+{
+	optional string trayUID = 1;
+	optional string trayid = 2;
+	optional string trayCode = 3;
+}
+
+
+message RT_MS_MachineAccessories
+{
+
+	optional bool  isApertureBlock = 1;
+	optional bool  isShieldBlock = 2;
+	optional float sourceToBlockTryDistance = 3;
+	optional float  height = 4;
+	optional float sourceToApplicatorLowDistance = 5;
+	optional float sourceToWedgeDistance = 6;
+	repeated RT_MS_MachineElectronApplicator electronApplicatorListInfo= 7;
+	repeated RT_MS_MachineWedge          machineWedgeListInfo = 8;
+	
+	optional RT_MS_MachineMotorizedWedge motorizedWedge = 9;
+	repeated string trayUIDList = 10;
+	optional string UID = 11;
+	repeated string trayACCcode = 12;
+	repeated RT_MS_MachineTray trayList = 13;
+}
+
+message RT_MS_MachineElectronApplicator
+{
+    optional string applicatorACCID = 1;
+    optional float sizeX = 2;
+    optional float sizeY = 3;
+	optional string applicatorUID = 4;
+}
+
+
+message RT_MS_MachineMotorizedWedge
+{
+	optional int32 motorizedWedgeOrientation = 1;
+	optional float motorizedFieldSizeLimitX =2;
+	optional float motorizedfieldSizeLimitY =3;
+}
+
+
+message RT_MS_MachineWedge
+{
+    optional string wedgeACCID = 1;
+    optional float degree = 2;
+    optional float leftMin = 3;
+	optional float leftMax = 4;
+    optional float rightMin = 5;
+	optional float rightMax = 6;
+    optional float topMin = 7;
+	optional float topMax = 8;
+    optional float bottomMin = 9;
+	optional float bottomMax = 10;
+	optional string  orientationType = 11;
+	optional string wedgeUID       = 12;
+	optional int32   wedgeType = 13;
+	optional string accCode = 14;
+}
+
+
+

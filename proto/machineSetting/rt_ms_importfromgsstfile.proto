@@ -1,0 +1,37 @@
+package ms.proto;
+
+
+message RT_MS_ImportGSTTFromFile
+{
+	optional string sAccessoryUID = 1;
+	optional string sCommissionedunitUID = 2;
+	optional string sGSTTFileName = 3;
+	optional  float wedgefactor = 4;
+	repeated RT_MS_VirtualWedgeFactorField virtualWedgeFactorList = 5;
+	optional int32 orientationType = 6;
+	optional string goldenUID = 7;
+}
+
+message RT_MS_VirtualWedgeFactorField
+{
+     optional float  collimatorX1Position = 1;
+	 optional float collimatorX2Position = 2;
+     optional float relativeMU = 3;
+	 optional float correctionFactor = 4;
+	 
+}
+
+message RT_MS_VirtualWedgeFactor
+{
+  optional string accesssoryUID = 1;
+  optional  float wedgefactor = 2;
+  optional string commmissionUID = 3;
+  repeated RT_MS_VirtualWedgeFactorField virtualWedgeFactorList = 4;  
+
+}
+
+message RT_MS_VirtualWedgeFactorList
+{
+  repeated RT_MS_ImportGSTTFromFile virtualFactorList = 1;  
+}
+

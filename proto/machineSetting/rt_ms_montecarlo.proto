@@ -1,0 +1,119 @@
+package ms.proto;
+
+
+message RT_MS_Spectrum
+{
+    optional string uid = 1;
+    optional float energy = 2;
+	optional float weight = 3;
+}
+
+message RT_MS_FieldSize
+{
+    optional string uid = 1;
+    optional float fieldSize = 2;
+	optional float absoluteFactor = 3;
+}
+
+message RT_MS_ContourVerter
+{
+    optional string uid = 1;
+    optional float ContourVerterx = 2;
+	optional float ContourVertery = 3;
+}
+
+message RT_MS_MonteCarloVirtualWedgeField
+{
+	 optional string  uid = 1;
+     optional float  collimatorX1Position = 2;
+	 optional float collimatorX2Position = 3;
+     optional float relativeMU = 4;
+	 optional float correctionFactor = 5;
+}
+
+message RT_MS_MonteCarloVirtualWedgeInfo
+{
+    optional string virtualUid = 1;
+	optional string goldenUID = 2;
+	repeated RT_MS_MonteCarloVirtualWedgeField virtualWedgeFieldList = 3;
+}
+
+
+message RT_MS_MonteCarloPhysicalWedgeField
+{
+    optional string wedgeId = 1;
+	optional string wedgeType = 2;
+	optional float  mu = 3;
+	optional float dmudx = 4;
+    optional float dmudr = 5;
+	optional float dmuda = 6;
+	optional float hvlSlope = 7;
+	optional float  Carriermu = 8;
+	optional float Carrierdmudx = 9;
+    optional float Carrierdmudr = 10;
+	optional float Carrierdmuda = 11;
+	optional float CarrierhvlSlope = 12;
+	
+    optional float wedgeThick = 13;
+	optional float carrierThick = 14;
+	
+    repeated RT_MS_ContourVerter weightContourVerterList = 15;
+	repeated RT_MS_ContourVerter carrierContourVerterList = 16;
+	
+    optional string wedgeUID = 17;
+	optional string carrierUID = 18;
+	optional string contourUID1 = 19;
+	optional string contourUID2 = 20;
+}
+
+
+message RT_MS_MonteCarlo
+{
+	optional string uid = 1;
+	optional string parentuid = 2;
+	
+	optional float xJawTopPosition = 3;
+	optional float yJawTopPosition = 4;
+	optional float xJawThickness = 5;
+	optional float yJawThickness = 6;
+	
+    optional float mlcCenterPosition = 7;
+	optional float mlcThickness = 8;
+	optional float mlcLeafendRadius = 9;
+	optional float airGapWidth = 10;
+
+	optional float tongueGrooveWidth = 11;
+	optional float muCorrectionFactor = 12;
+	
+	optional float minElectronEnergy = 13;
+	optional float maxElectronEnergy = 14;
+	optional float normTen           = 15;
+	
+	optional string oarDepth1 = 16;
+	optional string oarDepth2 = 17;
+	optional string energyValue = 18;
+	
+    optional bool  electronContaminationFlag = 19;
+	optional float electronMaxDepth = 20;
+    optional float surfaceDose = 21;
+	optional float depthCoefficientK = 22;
+	optional float offaxisCoefficientA = 23;
+	optional float df = 24;
+	optional float sf = 25;
+	optional float cOne = 26;
+	optional float cTwo = 27;
+	optional float cThree = 28;
+	
+	repeated RT_MS_Spectrum spectrumList = 29;
+	repeated RT_MS_FieldSize fieldSizeList = 30;
+	
+	repeated RT_MS_MonteCarloPhysicalWedgeField physicalWedgeFieldList = 31;
+	repeated RT_MS_MonteCarloVirtualWedgeInfo virtualWeidgeFieldList = 32;
+	
+	optional string monterCarloName = 33;
+	optional string wedgeId = 34;
+	optional string filePath = 35;
+	optional string accessoryUID = 36;
+	optional int32 algType = 37;
+	
+}

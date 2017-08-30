@@ -1,0 +1,37 @@
+
+package tps.proto;
+
+message RT_TPS_MEASURE_ANGLE
+{
+	enum MOUSE_ACTION_TYPE
+		{ 
+			NONE_MOUSE_ACTION_TYPE = -1;
+			MOUSE_ACTION_UP = 1;
+			MOUSE_ACTION_MOVE = 2;
+			MOUSE_ACTION_DOWN = 3;
+			MOUSE_ACTION_DRAG = 4;
+			MOUSE_ACTION_DOUBLE_CLICK = 5;
+			MOUSE_ACTION_RIGHT_CLICK = 6;
+			MOUSE_ACTION_EMPTY = 7;
+		} 
+
+	required int32 viewerControlID = 1;            		//viewer control ID 
+    optional int32 cellID = 2;                     		//cell ID normal = 0
+	optional AnglePointsList m_AnglePoints = 3;         //angle point list
+	required float m_fCursorX = 4;                      //current cursor x
+	required float m_fCursorY = 5;						//current cursor y
+	optional string curImageUid = 11;               	//uid of current image set
+	optional MOUSE_ACTION_TYPE mouseactiontype = 13;    //mouse action type of medview
+	required bool actionStarted = 14;                   //flag which shows if action has been started
+	required bool firstSideDone = 15;                   //flag which shows if firstSide has been done
+	required bool secondSideDone = 16;                  //flag which shows if secondSide has been done
+}
+message AnglePoint
+{
+	optional float m_X = 1;
+	optional float m_Y = 2;
+}
+message AnglePointsList
+{
+	repeated AnglePoint mAnglePoints= 1;
+}

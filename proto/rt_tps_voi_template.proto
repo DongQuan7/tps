@@ -1,0 +1,15 @@
+import "rt_tps_simplevoi.proto";
+package tps.proto;
+
+message RT_TPS_VOITemplate
+{
+    optional string templateUID = 1;
+    optional string templateName = 2;
+    optional string templateDescription = 3;
+    repeated RT_TPS_SimpleVOI simpleVOI = 4;
+}
+
+message RT_TPS_VOITemplate_List
+{
+    repeated RT_TPS_VOITemplate voiTemplate = 1;
+}

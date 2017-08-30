@@ -1,0 +1,17 @@
+import "rt_tps_point.proto";
+package tps.proto;
+
+message RT_TPS_CT2DensityTable
+{
+	required string tableUid = 1;
+	optional string tableName = 2;
+	repeated RT_TPS_CT2DensityItem tableData = 3;
+	optional bool isdefault = 4;
+}
+
+message RT_TPS_CT2DensityItem
+{
+    required int32 ctValue = 1;
+    required float massDensity = 2;
+    required float referenceElectronDensity = 3;
+}

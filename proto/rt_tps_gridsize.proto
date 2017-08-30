@@ -1,0 +1,16 @@
+package tps.proto;
+message RT_TPS_GridSize
+{
+	required float x = 1;
+	required float y = 2;
+	required float z = 3;
+	required string plan_uid = 4;
+	optional bool is_show_gridboundary = 5;
+	optional string normgroup_uid = 6;
+	optional float startX = 7;
+	optional float startY = 8;
+	optional float startZ = 9;
+	optional float sizeX = 10;
+	optional float sizeY = 11;
+	optional float sizeZ = 12;
+}

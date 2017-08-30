@@ -1,0 +1,25 @@
+package tps.proto;
+message RT_TPS_SimpleOptgoal
+{
+    optional int32 fuctionType = 1;
+    optional int32 minMaxFlag = 2; // minDose: 0; maxDose: 1;
+    optional float dose = 3;
+    optional float volume = 4;
+    optional float eud = 5;
+    optional float weight = 6;
+    optional bool isHard = 7;
+    optional string target = 8;
+}
+
+message RT_TPS_OptimizerTemplate
+{
+    optional string templateUID = 1;
+    optional string templateName = 2;
+    optional string templateDescription = 3;
+    repeated RT_TPS_SimpleOptgoal optGoals = 4;
+}
+
+message RT_TPS_OptimizerTemplate_List
+{
+    repeated RT_TPS_OptimizerTemplate optimizerTemplates = 1;
+}

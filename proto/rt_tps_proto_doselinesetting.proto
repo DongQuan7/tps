@@ -1,0 +1,17 @@
+package tps.proto;
+message RtTpsProtoDoseLineSetting
+{
+	optional int32 displayMode					= 1;
+	optional int32 hundredPercentDefinition		= 2;
+	optional float specifiedDose				= 3;
+	optional int32 renderMode					= 4;
+	optional float transparency					= 5;
+	optional float transparency3D				= 6;
+	optional bool enableSkinDoseView			= 7;
+	optional float maxSkinDose					= 8;
+}
+
+message RtTpsProtoRepeatedDoseLineSetting
+{
+	repeated RtTpsProtoDoseLineSetting doseLineSettingList	= 1;
+}

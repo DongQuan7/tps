@@ -1,0 +1,14 @@
+package tps.proto;
+
+message RT_TPS_MANUAL_FUSION
+{
+    required double xStart = 1;
+    required double yStart = 2;
+    required double xEnd = 3;
+    required double yEnd = 4;
+    required int32 action = 5;
+    required int32 lastaction = 6;
+    required int32 viewerControlID = 7;
+    optional int32 cellID = 8;
+    optional int32 hittestMode = 9;
+}

@@ -1,0 +1,9 @@
+import "rt_tps_proto_doseline.proto";
+import "rt_tps_proto_doselinesetting.proto";
+package tps.proto;
+message RtTpsProtoDoseLineParams
+{
+	repeated RtTpsProtoDoseLine doseLineList				= 1;
+	optional RtTpsProtoDoseLineSetting doseLineSetting		= 2;
+	optional string planUID									= 3;
+}	

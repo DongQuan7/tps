@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B55A3021-9E60-40CB-B1BF-7F8E241F7CDD}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <RootNamespace>RtTpsGalleryControllerApp</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\UIH\bin_$(Configuration)\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\rt;..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfLogger.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;RtTpsRenderController.lib;RtTpsCommonControllerApp.lib;RtTpsDoseProxy.lib;RTFWKDataLayer.lib;Mcsf3DArithmetic.lib;RtTpsProtoLib.lib;RtTpsRenderLibrary.lib;McsfGeometry.lib;RtTpsAlgorithmProxy.lib;McsfViewer3DArithmetic.lib;McsfViewer3DGraphicObject.lib;cpprest100_1_1.lib;RTFWKUtility.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;_DEBUG;_WINDOWS;_USRDLL;TPS_COMCA_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <DisableSpecificWarnings>4244;4267;4512;4201;4251</DisableSpecificWarnings>
+      <OpenMPSupport>true</OpenMPSupport>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;$(SolutionDir)\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;NDEBUG;_WINDOWS;_USRDLL;TPS_COMCA_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <DisableSpecificWarnings>4244;4267;4512;4743;4201;4996</DisableSpecificWarnings>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\rt;..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfLogger.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;RtTpsRenderController.lib;RtTpsCommonControllerApp.lib;RtTpsDoseProxy.lib;RTFWKDataLayer.lib;Mcsf3DArithmetic.lib;RtTpsProtoLib.lib;RtTpsRenderLibrary.lib;McsfGeometry.lib;RtTpsAlgorithmProxy.lib;McsfViewer3DArithmetic.lib;McsfViewer3DGraphicObject.lib;cpprest100_1_1.lib;RTFWKUtility.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsGalleryControllerApp\tps_gca_defs.h" />
+    <ClInclude Include="..\include\RtTpsGalleryControllerApp\tps_gca_idataaccessor.h" />
+    <ClInclude Include="..\include\RtTpsGalleryControllerApp\tps_gca_idataloader.h" />
+    <ClInclude Include="..\include\RtTpsGalleryControllerApp\tps_gca_igallery_controller.h" />
+    <ClInclude Include="..\include\RtTpsGalleryControllerApp\tps_gca_improperator.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="tps_gca_dataaccessorimpl.h" />
+    <ClInclude Include="tps_gca_dataloaderimpl.h" />
+    <ClInclude Include="tps_gca_datamodel_deleteseries.h" />
+    <ClInclude Include="tps_gca_datamodel_deleteslices.h" />
+    <ClInclude Include="tps_gca_datamodel_expandseries.h" />
+    <ClInclude Include="tps_gca_datamodel_series.h" />
+    <ClInclude Include="tps_gca_gallery_controllerapp.h" />
+    <ClInclude Include="tps_gca_measureanglecmd.h" />
+    <ClInclude Include="tps_gca_measuredistancecmd.h" />
+    <ClInclude Include="tps_gca_mprcornertextinfo_visible_cmd.h" />
+    <ClInclude Include="tps_gca_mprhittest_cmd.h" />
+    <ClInclude Include="tps_gca_mproperator.h" />
+    <ClInclude Include="tps_gca_mprpageturncmd.h" />
+    <ClInclude Include="tps_gca_mprrotatecmd.h" />
+    <ClInclude Include="tps_gca_mprupdatecornertextinfo_cmd.h" />
+    <ClInclude Include="tps_gca_mprzoompanwindowingcmd.h" />
+    <ClInclude Include="tps_gca_datamodel_editcourse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tps_gca_dataaccesorimpl.cpp" />
+    <ClCompile Include="tps_gca_dataloaderimpl.cpp" />
+    <ClCompile Include="tps_gca_datamodel_deleteslices.cpp" />
+    <ClCompile Include="tps_gca_datamodel_expandseries.cpp" />
+    <ClCompile Include="tps_gca_datamodel_series.cpp" />
+    <ClCompile Include="tps_gca_gallery_controllerapp.cpp" />
+    <ClCompile Include="tps_gca_measureanglecmd.cpp" />
+    <ClCompile Include="tps_gca_measuredistancecmd.cpp" />
+    <ClCompile Include="tps_gca_mprcornertextinfo_visible_cmd.cpp" />
+    <ClCompile Include="tps_gca_mprhittest_cmd.cpp" />
+    <ClCompile Include="tps_gca_mproperator.cpp" />
+    <ClCompile Include="tps_gca_mprpageturncmd.cpp" />
+    <ClCompile Include="tps_gca_mprrotatecmd.cpp" />
+    <ClCompile Include="tps_gca_mprupdatecornertextinfo_cmd.cpp" />
+    <ClCompile Include="tps_gca_mprzoompanwindowingcmd.cpp" />
+    <ClCompile Include="tps_gca_datamodel_editcourse.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsGalleryControllerApp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

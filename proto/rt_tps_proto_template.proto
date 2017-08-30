@@ -1,0 +1,12 @@
+package tps.proto;
+message RtTpsProtoTemplate
+{
+    optional string uid                     = 1;
+    optional string name		    = 2;
+    optional string value		    = 3;
+}
+
+message RtTpsProtoRepeatedTemplates
+{
+	repeated RtTpsProtoTemplate templates	= 1;
+}

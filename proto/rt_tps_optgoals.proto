@@ -1,0 +1,23 @@
+package tps.proto; 
+message RT_TPS_Optgoal
+{
+    optional string normGroupUid = 1;
+    optional string voiUid = 2;
+    optional string voiName = 3;
+    optional int32 planningRole = 4;
+    optional int32 fuctionType = 5;
+    optional int32 minMaxFlag = 6; // minDose: 0; maxDose: 1;
+    optional float dose = 7;
+    optional float volume = 8;
+    optional float eud = 9;
+    optional float weight = 10;
+    optional bool isHard = 11;
+    optional string optGoalUid = 12;
+    optional bool isJoinOpt = 13;
+    optional float eudResult = 14;
+    optional int32 id = 15;
+}
+message RT_TPS_OptgoalList
+{
+    repeated RT_TPS_Optgoal opts = 1;
+}

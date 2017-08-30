@@ -1,0 +1,11 @@
+package tps.proto;
+message RtTpsProtoTable
+{
+    required string uid		= 1;
+	required string name	= 2;
+}
+
+message RtTpsProtoRepeatedTable
+{
+	repeated RtTpsProtoTable table	= 1;
+}

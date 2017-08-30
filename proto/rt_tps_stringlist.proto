@@ -1,0 +1,11 @@
+package tps.proto;
+
+message RT_TPS_StringList
+{
+	repeated string strContent = 1;
+}
+
+message RT_TPS_String
+{
+	optional string content = 1;
+}

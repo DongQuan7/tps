@@ -1,0 +1,43 @@
+import "rt_tps_proto_patient.proto";
+import "rt_tps_proto_course.proto";
+import "rt_tps_proto_series.proto";
+import "rt_tps_proto_voi.proto";
+import "rt_tps_proto_plan.proto";
+import "rt_tps_proto_poi.proto";
+import "rt_tps_proto_normalizationgroup.proto";
+import "rt_tps_proto_beam.proto";
+import "rt_tps_proto_segment.proto";
+import "rt_tps_proto_prescription.proto";
+import "rt_tps_proto_constraint.proto";
+import "rt_tps_proto_doseline.proto";
+import "rt_tps_proto_doselinesetting.proto";
+import "rt_tps_optgoals.proto";
+import "rt_tps_proto_table.proto";
+import "rt_tps_proto_series_group.proto";
+import "rt_tps_referenceimage.proto";
+import "rt_tps_proto_site.proto";
+import "rt_tps_dvhdata.proto";
+
+package tps.proto;
+message RtTpsProtoPatientTreeData
+{
+	optional RtTpsProtoPatient patient								= 1;
+	repeated RtTpsProtoCourse courseList							= 2;
+	repeated RtTpsProtoSeries seriesList							= 3;
+	repeated RtTpsProtoVoi voiList									= 4;
+	repeated RtTpsProtoPlan planList								= 5;
+	repeated RtTpsProtoPoi poiList									= 6;
+	repeated RtTpsProtoNormalizationGroup normalizationGroupList 	= 7;
+	repeated RtTpsProtoBeam beamList								= 8;
+	repeated RtTpsProtoSegment segmentList							= 9;
+	repeated RtTpsProtoPrescription prescriptionList				= 10;
+	repeated RtTpsProtoConstraint constraintList					= 11;
+	repeated RtTpsProtoDoseLine doseLineList						= 12;
+	repeated RT_TPS_Optgoal optGoalList								= 13;
+	repeated RtTpsProtoTable tpsTable                               = 14;
+	repeated RtTpsProtoSeriesGroup  seriesGroup                     = 15;
+	repeated ReferenceImage rtImageList								= 16;
+	repeated RtTpsProtoSite siteList                                = 17;
+	repeated RT_TPS_DVHData dvhList									= 18;
+	repeated RtTpsProtoPoi maxPointList								= 19;
+}

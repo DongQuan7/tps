@@ -1,0 +1,12 @@
+package tps.proto;
+message RtTpsProtoSite
+{
+    optional string siteUID         				= 1;
+    optional string siteName						= 2;
+    optional string courseUID						= 3;
+}
+
+message RtTpsProtoRepeatedSite
+{
+	repeated RtTpsProtoSite siteList				= 1;
+}

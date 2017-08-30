@@ -1,0 +1,22 @@
+package tps.proto;
+
+message RT_TPS_CornerText_MPR
+{
+    optional string planname = 1;
+	optional string seriesname = 2;
+	optional string seriesdatetime = 3;
+	optional string patientposition = 4;
+	optional double value = 5;
+	optional double density = 6;
+	optional double dosevalue = 7;
+	optional double pixelpositionx = 8;
+	optional double pixelpositiony = 9;
+	optional double pixelpositionz = 10;
+	optional double windowwidth = 11;
+	optional double windowcenter = 12;
+	optional int32 slicenumber = 13;
+	optional int32 startslicenumber = 14;
+	optional double slicethickness = 15;
+    optional bool isvaluevalid = 16;
+    optional string modality = 17;
+}

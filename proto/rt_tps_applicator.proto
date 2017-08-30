@@ -1,0 +1,13 @@
+package tps.proto;
+
+message RT_TPS_Applicator
+{
+	required string applicator_uid		= 1;
+	optional string unit_uid			= 2;
+	optional string applicator_name		= 3;
+}
+
+message RT_TPS_ApplicatorList
+{
+	repeated RT_TPS_Applicator applicator_list = 1;
+}

@@ -1,0 +1,18 @@
+package ms.proto;
+
+
+message RT_MS_PhoEnergyWeight
+{
+	optional float energy = 1;
+	optional float weight = 2;
+}
+
+
+
+message RT_MS_PhoSpectrum
+{
+    optional string UID = 1;
+	optional float minEnergy = 2;
+	optional float maxEnergy = 3;
+	repeated RT_MS_PhoEnergyWeight energyWeightInfoList = 4;
+}

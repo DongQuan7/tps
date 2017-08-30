@@ -1,0 +1,17 @@
+package tps.proto;
+message RtTpsProtoBeamSSD
+{
+    optional float SsdRangeMin							= 1;
+    optional float SsdRangeMax							= 2;
+    optional float Originalx							= 3;
+    optional float Originaly							= 4;
+    optional float Originalz							= 5;
+	repeated RtTpsProtoSegmentSSD segmentssd_list		= 6;
+	optional float Ssd									= 7;
+}
+
+message RtTpsProtoSegmentSSD
+{
+	optional float StartSSD								= 1;
+	optional float EndSSD								= 2;
+}

@@ -1,0 +1,22 @@
+package tps.proto;
+
+message RT_TPS_SELECT_CONTOUR_SLICES
+{
+    required double x = 1;
+    required double y = 2;
+
+    required int32 mouseActionType = 3;
+    required int32 lastMouseActionType = 4;
+
+    required int32 viewerControlID = 5;
+    required int32 cellID = 6;
+
+    required string voiUID = 7;
+
+	optional bool isEditingStarted = 8;
+	
+	optional int32 firstSlice = 9;
+	
+	optional int32 secondSlice = 10;
+	
+}

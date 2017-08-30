@@ -1,0 +1,40 @@
+package tps.proto;
+message RtTpsProtoVoi
+{
+    required string voiuid				= 1;
+	required string seriesuid			= 2;
+	required string voiname				= 3;
+	optional int32 planningrole			= 4;
+	repeated float voicolor				= 5;
+	optional bool isvisible				= 6;
+	optional bool islocked				= 7;
+	optional float averagedensity		= 8;
+	optional float maxdensity			= 9;
+	optional float mindensity			= 10;
+	optional float volume				= 11;
+	optional float surfacearea			= 12;
+	optional float centroidx			= 13;
+	optional float centroidy			= 14;
+	optional float centroidz			= 15;
+	repeated int32 slices				= 16;
+	optional float minDose				= 17;
+	optional float maxDose				= 18;
+	optional float meanDose				= 19;
+	optional float standard_deviation	= 20;
+	optional bool isshaded				= 21;
+	optional int32 subrole				= 22;
+	optional int32 isapproved			= 23;
+	optional int32 locktype				= 24;
+	optional float ingrid			    = 25;
+	optional float tcpntcp				= 26;
+	optional string description			= 27;
+	optional bool isoverride			= 28;
+    optional float overridemassdensity  = 29;
+    optional float overridereferenceelectrondensity  = 30;
+	optional int32 organType			= 31;
+}
+
+message RtTpsProtoRepeatedVoi
+{
+	repeated RtTpsProtoVoi voilist	= 1;
+}

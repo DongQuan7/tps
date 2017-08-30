@@ -1,0 +1,12 @@
+import "rt_tps_proto_series.proto";
+import "rt_tps_proto_voi.proto";
+import "rt_tps_proto_poi.proto";
+import "rt_tps_proto_patient.proto";
+package tps.proto;
+message RtTpsProtoAdminTreeData
+{
+	repeated RtTpsProtoPatient patientList							= 1;
+	repeated RtTpsProtoSeries seriesList							= 2;
+	repeated RtTpsProtoVoi voiList									= 3;
+	repeated RtTpsProtoPoi poiList									= 4;
+}

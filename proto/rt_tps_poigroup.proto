@@ -1,0 +1,27 @@
+package tps.proto;
+
+message RT_TPS_PoiGroup
+{
+	repeated RT_TPS_PoiInformation poiInfoList = 1;
+	optional string groupID = 2;
+}
+
+message RT_TPS_PoiInformation
+{
+    optional string poiUid = 1;
+	optional string name = 2;
+	optional int32 role = 3;
+	repeated float color = 4;
+	optional bool isVisible = 5;
+	optional bool isLocked = 6;
+	optional float xCoordInPat = 7;
+	optional float yCoordInPat = 8;
+	optional float zCoordInPat = 9;
+	optional float dose = 10;
+	optional float xCoordInCol = 11;
+	optional float yCoordInCol = 12;
+	optional float pointDepth = 13;
+	optional string relatedBeamUID = 14;
+	optional float doseAtRelatedBeam = 15;
+	optional string planUid = 16;
+}

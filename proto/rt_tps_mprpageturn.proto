@@ -1,0 +1,9 @@
+
+package tps.proto;
+
+message RT_TPS_MPR_PAGETURN
+{
+    required int32 viewerControlID = 1;            //viewer control ID 
+    required int32 cellID = 2;                     //cell ID normal = 0
+    required int32 pageturn = 3;                   //pageup or pagedown
+}

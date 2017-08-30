@@ -1,0 +1,9 @@
+package tps.proto;
+
+message RT_TPS_SimpleVOI
+{
+    optional string name = 1;
+    required int32 planningRole = 2;
+    required int32 subrole = 3;
+    repeated float color = 4;
+}

@@ -1,0 +1,103 @@
+import "rt_tps_proto_segment.proto";
+import "rt_tps_proto_block.proto";
+package tps.proto;
+message RtTpsProtoBeam
+{
+	required string beam_uid								= 1;
+	optional string normal_group_uid						= 2;
+	optional int32  beam_number								= 3;//300A00C0 in DICOM
+	optional string beam_name								= 4;//300A00C2 in DICOM
+	optional string beam_description						= 5;//300A00C3 in DICOM
+	optional string commissioned_unit_uid					= 6;
+	optional string isocenter_uid							= 7;
+	optional float ssd										= 8;
+	optional float beam_mu									= 9;
+	optional bool is_visible								= 10;
+	optional bool is_clockwise								= 11;
+	optional bool is_joined									= 12;
+	optional int32 edit_type								= 13;
+	optional float beam_weight								= 14;
+    optional float dose_rate								= 15;
+	optional float beam_dose								= 16;
+	optional bool is_dose_valid								= 17;
+	repeated RtTpsProtoSegment segment_list					= 18;
+	
+	//geometry
+	optional float gantry_start_angle						= 19;
+	optional float gantry_arc_length						= 20;
+	optional float collimator_angle							= 21;
+	optional float couch_angle								= 22;
+	
+	//aperture
+	optional int32 aperture_type							= 23;//0:MLC 1:JawOnly 2:Cone 3:Aperture Block
+	optional bool is_auto_tracking_shaped					= 24;
+	optional string target_voi_uid							= 25;
+	optional double target_margin_x							= 26;
+	optional double target_margin_y							= 27;
+	optional string avoid_voi_uid							= 28;
+	optional double avoid_margin_x							= 29;
+	optional double avoid_margin_y							= 30;
+	optional bool is_jaw_follow								= 31;
+	optional float jaw_follow_margin_x						= 32;
+	optional float jaw_follow_margin_y						= 33;
+	optional bool is_x_symmetric							= 34;
+	optional bool is_y_symmetric							= 35;
+	//aperture block		
+	optional RtTpsProtoBlock aperture_block					= 36;
+	
+	//shielding block
+	optional RtTpsProtoBlock shielding_block				= 37;
+	optional bool use_shielding_block						= 38;
+	optional bool is_shielding_block_auto_tracking_shape 	= 39;
+	optional string shielding_block_target_voi_uid		 	= 40;
+	optional double shielding_block_target_margin_x			= 41;
+	optional double shielding_block_target_margin_y			= 42;
+	optional string shielding_block_avoid_voi_uid			= 43;
+	optional double shielding_block_avoid_margin_x			= 44;
+	optional double shielding_block_avoid_margin_y			= 45;
+	
+	//virtual wedge
+	optional bool use_virtual_wedge							= 46;
+    optional string virtual_wedge_uid						= 47;
+	
+	//physical wedge
+	optional bool use_physical_wedge						= 48;
+	optional string physical_wedge_uid						= 49;
+	
+	//tray
+	optional string tray_uid								= 50;
+	
+	//bolus
+    optional string bolus_voi_uid                           = 51;
+	
+	//applicator
+	optional string applicator_uid							= 52;
+	
+	//e-beam block
+	optional bool use_e_beam_block							= 53;
+	optional RtTpsProtoBlock e_beam_block					= 54;
+	
+	//for editing beam description
+	optional bool is_auto_created							= 55;
+	
+	//0:Center 1:Top 2:Bottom
+	optional int32 mlcedittype								= 56;
+
+    //move from ng to beam
+    optional int32 algorithmType							= 57;
+
+    //dosegriduid
+    optional string dosegrid_uid							= 58;
+
+    //currentsegmentuid
+    optional string current_segment_uid						= 59;
+	
+	//just for easyplan
+	optional bool is_opposite_beam                          = 60;
+}
+
+message RtTpsProtoRepeatedBeam
+{
+	repeated RtTpsProtoBeam beamList		= 1;
+}
+

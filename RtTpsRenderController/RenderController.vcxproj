@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_admin_mpr_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_beam_preview_rendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_bevrendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_common_fusion_mpr_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_common_mpr_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_easyplan_image_rendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_fusion_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_gallery_mprrendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_gallery_shadedsurfacerendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mlcrendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mpr_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_mpr_render_controller_axial.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_planQA_mpr_render_controller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_planQA_mpr_render_controller_axial.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_shadedsurfacerendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_ut_rendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_voi_preview_rendercontroller.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_defs.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_rendercontroller.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_rendercontrollerfactory.h" />
+    <ClInclude Include="..\include\RtTpsRenderController\tps_rc_renderproxy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="tps_rc_admin_mpr_render_controller.cpp" />
+    <ClCompile Include="tps_rc_beam_preview_rendercontroller.cpp" />
+    <ClCompile Include="tps_rc_bevrendercontroller.cpp" />
+    <ClCompile Include="tps_rc_common_fusion_mpr_render_controller.cpp" />
+    <ClCompile Include="tps_rc_common_mpr_render_controller.cpp" />
+    <ClCompile Include="tps_rc_easyplan_image_rendercontroller.cpp" />
+    <ClCompile Include="tps_rc_fusion_render_controller.cpp" />
+    <ClCompile Include="tps_rc_gallery_mprrendercontroller.cpp" />
+    <ClCompile Include="tps_rc_gallery_shadedsurfacerendercontroller.cpp" />
+    <ClCompile Include="tps_rc_mlcrendercontroller.cpp" />
+    <ClCompile Include="tps_rc_mpr_render_controller.cpp" />
+    <ClCompile Include="tps_rc_mpr_render_controller_axial.cpp" />
+    <ClCompile Include="tps_rc_planQA_mpr_render_controller.cpp" />
+    <ClCompile Include="tps_rc_planQA_mpr_render_controller_axial.cpp" />
+    <ClCompile Include="tps_rc_rendercontroller.cpp" />
+    <ClCompile Include="tps_rc_render_controller_factory.cpp" />
+    <ClCompile Include="tps_rc_renderproxy.cpp" />
+    <ClCompile Include="tps_rc_shadedsurfacerendercontroller.cpp" />
+    <ClCompile Include="tps_rc_ut_rendercontroller.cpp" />
+    <ClCompile Include="tps_rc_voi_preview_rendercontroller.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsRenderController.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{614E7D8E-E039-49F9-8405-BAF0786F7922}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RenderController</RootNamespace>
+    <ProjectName>RtTpsRenderController</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin_debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;TPS_RC_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3DAlgorithm;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201;4996</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfViewer3DGraphicObject.lib;McsfViewer3DScene.lib;McsfViewer3DModel.lib;McsfLogger.lib;RtTpsRenderLibrary.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;RtTpsAlgorithmProxy.lib;RtTpsDatabaseWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\rt;..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;TPS_RC_EXPORT;ULIB;TEST_PERFORMANCE_ON;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\include;..\..\..\..\UIH\include\mcs\McsfMedViewer3DAlgorithm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201;4996;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;..\..\..\..\UIH\lib\rt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfViewer3DGraphicObject.lib;McsfViewer3DScene.lib;McsfViewer3DModel.lib;McsfLogger.lib;RtTpsRenderLibrary.lib;RtTpsFramework.lib;RtTpsDataAccess.lib;RtTpsAlgorithmProxy.lib;RtTpsDatabaseWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

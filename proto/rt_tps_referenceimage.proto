@@ -1,0 +1,75 @@
+package tps.proto;
+
+message ReferenceImageInfo{
+
+    optional string groupID = 1;
+    optional string isocenterUID = 2;
+    optional float angle = 3;
+	optional ReferenceImage.IMAGE_TYPE imageType = 4;
+	optional string beamUID = 5;
+	optional string imageUID = 6;
+	optional int32 displayMedviewerID = 7;
+}
+
+message ReferenceImage
+{
+	enum IMAGE_TYPE
+    {
+	UNKNOW_TYPE = -1;
+	DRR_IMAGE = 1;
+	SLICE_IMAGE = 2;
+	EPID_IMAGE = 3;
+	PORT_IMAGE = 4;
+    }
+
+	optional string imageUID = 1;
+	optional string beamUID = 2;
+	optional string imageDate = 3; // 图像数据开始创建日期 DICOM TAG: 0008 0023
+	optional string imageTime = 4; // 图像数据开始创建时间 DICOM TAG: 0008 0033
+	optional float imageGantryAngle = 5; // DICOM TAG: 300A 011E
+	
+	optional IMAGE_TYPE imageType = 6; // 我们定义的image type，非DICOM 标准
+	optional int32 imageHeight = 7;
+	optional int32 imageWidth = 8;
+	optional float pixelSpacingX = 9;
+	optional float pixelSpacingY = 10;
+	optional int32 centerX = 11;
+	optional int32 centerY = 12;
+	optional int32 bitsAllocated = 13;
+	optional uint32 bufferLength = 14;
+	
+	optional bytes imageBuffer = 16;	
+	optional int32 cpNumber = 17;
+	
+	optional float receptorTranslationX = 18;
+	optional float receptorTranslationY = 19;
+	optional float receptorTranslationZ = 20;
+	optional float receptorAngle = 21;
+	optional float receptorPosX = 22;
+	optional float receptorPosY = 23;
+	
+	optional int32 bitsStored = 24;
+	optional int32 hightBit = 25;
+	optional string imageName = 26;
+	optional string pixelRepresentation = 27; // "0表示无符号", "1表示有符号"
+	optional int32 samplesPerPixel = 28;
+	optional int32 windowCenter = 29;
+	optional int32 windowWidth = 30;
+	
+	optional string patientName = 31;
+	optional string patientID = 32;
+	optional string patientBirthDate = 33;
+	optional int32 patientSex = 34;
+	optional int32 sad = 35;
+	optional int32 ssd = 36;
+	optional string dicomImageType = 37; // DICOM 标准定义的ImageType,eg:ORIGINAL\PRIMARY\AXIAL  DICOM TAG: 0008 0008
+	optional int32 patientPosition = 38; // DICOM TAG: 0018 5100
+	optional string imageAcquisitionDate = 39; // 产生图像的数据获得日期 DICOM TAG: 0008 0022
+	optional string imageAcquisitionTime = 40; // 产生图像的数据获得时间 DICOM TAG: 0008 0032
+}
+
+message ReferenceImageList
+{
+	repeated ReferenceImage imageList=1;
+	optional string patientUID = 2;
+}

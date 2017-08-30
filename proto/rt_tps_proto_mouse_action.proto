@@ -1,0 +1,13 @@
+package tps.proto;
+
+message RtTpsProtoMouseAction
+{
+    required int32 windowType = 1;	
+    required string windowUid = 2;		// always 0
+    required int32 action = 3;		// 0: mouse down; 1: mouse up; 2: mouse move; 3: move drag; 4: double click; 5: mouse cancel
+    optional int32 previousAction = 4;
+    required double x = 5;			// mouse position x, normalized, bottom left is (0,0), top right is (1,1)
+    required double y = 6;			// mouse position y, normalized
+    optional int32 width = 7;			// window width, in pixel
+    optional int32 height = 8; 		// window height, in pixel
+}

@@ -1,0 +1,44 @@
+package tps.proto;
+
+message RtTpsProtoVoiAdvanced
+{
+    //operation type, if is preview
+    required bool isPreview = 1;
+    //output ROI uid
+    required string roiUid = 2;
+    //if out ROI is new
+    optional string seriesUid = 3;
+    optional string name = 4;
+    optional int32 planningRole = 5;
+    optional int32 subRole = 6;
+    repeated float color = 7;
+    //mode: based on dose or based on ROIs
+    required bool isBasedOnDose = 8;
+    //if based on dose
+    optional string planUid = 9;
+    optional float fromDose = 10;
+    optional float toDose = 11;
+    //if based on ROIs
+    optional string sourceROIUid = 12;
+    repeated FunctionData functions = 13;
+}
+
+message FunctionData
+{
+    //function mode: Mirror, Expand, Shrink, Combine
+    required int32 mode = 1;
+    //mirror
+    optional int32 mirrorMode = 2;
+    //Expand or Shrink
+    optional bool isExpansion = 3;
+    optional bool is2DMode = 4;
+    optional bool isIsotropic = 5;
+    //margin, if isotropic, there will be only one item; if not, 6 items(R,L,A,P,F,H)
+    repeated float margin = 6;
+    optional bool isToCreateRing = 7;
+    optional float ringSize = 8;
+    //combine
+    //combination mode: Union, Intercest, Substract,XOR
+    optional int32 combinationMode = 9;
+    repeated string combinationRoiUids = 10;
+}

@@ -1,0 +1,11 @@
+
+package tps.proto;
+
+message RT_TPS_MOUSE_INFO
+{
+	required double x = 1;
+    required double y = 2;
+	required int32 mouseActionType = 3;
+	required int32 viewerControlID = 4;
+    required int32 cellID = 5;
+}

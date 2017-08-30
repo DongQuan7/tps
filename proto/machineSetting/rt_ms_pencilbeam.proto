@@ -1,0 +1,117 @@
+package ms.proto;
+
+message RT_MS_PencilBeam
+{
+     optional float diamOne = 1;
+	 optional float diamTwo = 2;
+     optional float srcRatio = 3;
+	 optional float transmission = 4;
+	 optional float psd = 5;
+	 optional float sddXJaw = 6;
+	 optional float sddYJaw = 7;
+	 
+	 optional float xk0 = 8;
+	 optional float xk1 = 9;
+	 optional float xk2 = 10;
+	 optional float yk0 = 11;
+	 optional float yk1 = 12;
+	 optional float yk2 = 13;
+	  
+	 repeated RT_MS_PencilPDDTMR tMRListList = 14;
+	 
+	 repeated RT_MS_PencilBeamPhysicalWedgeField physicalWedgeFieldList = 15;
+	 repeated RT_MS_PencilBeamVirtualWedgeInfo virtualWedgeInfoList = 16;
+	 
+	 optional string commissionUID = 17;
+	 optional string accName = 18;
+	 optional string accessoryUID = 19;
+	 optional string wedgeId = 20;
+	 optional int32 algType = 21;
+
+     optional int32 scXcountProto=22;
+     optional int32 scYcountProto=23;
+     optional string scXPositionsProto=24;
+     optional string scYpositionsProto=25;
+     optional string scBlocbProto=26;
+     optional float referencefluence=27;
+
+     //new add for out field of pencilbeam
+     optional float diamThree = 28;
+     optional float srcRatio3 = 29;
+     optional float eeqdiam = 30;
+
+     optional string depthvec = 31;
+     optional string radiusvec =32;
+     optional string sar =33;
+
+     optional string flatnessradiusvec = 34;
+     optional string flatnessdepthvec = 35;
+     optional string flatness = 36;
+}
+
+message RT_MS_PencilPDDTMR
+{
+    optional string uid = 1;
+	optional float depth = 2;
+    optional float value = 3;
+}
+
+message RT_MS_PencilBeamPhysicalWedgeField
+{
+	 optional string wedgeType = 1;
+	 optional string wedgeId = 2;
+	 optional float  mu = 3;
+	 optional float dmudx = 4;
+     optional float dmudr = 5;
+	 optional float dmuda = 6;
+	 optional float hvlSlope = 7;
+	 optional float  Carriermu = 8;
+	 optional float Carrierdmudx = 9;
+     optional float Carrierdmudr = 10;
+	 optional float Carrierdmuda = 11;
+	 optional float CarrierhvlSlope = 12;
+	 
+	 optional float wedgeThick = 13;
+	 optional float carrierThick = 14;
+	 
+	 repeated RT_MS_PencilContourVerter weightContourVerterList = 15;
+	 repeated RT_MS_PencilContourVerter carrierContourVerterList = 16;
+	 optional string wedgeUID = 17;
+	 optional string carrierUID = 18;
+	 
+	optional string contourUID1 = 19;
+	optional string contourUID2 = 20;
+	optional float density = 21;
+}
+
+message RT_MS_PencilContourVerter
+{
+    optional string uid = 1;
+    optional float ContourVerterx = 2;
+	optional float ContourVertery = 3;
+}
+
+message RT_MS_PencilBeamVirtualWedgeInfo
+{
+    optional string virtualUid = 1;
+	optional string goldenUID = 2;
+	repeated RT_MS_PencilVirtualWedgeField virtualWedgeFieldList = 3;
+}
+
+message RT_MS_PencilVirtualWedgeField
+{
+	 optional string  uid = 1;
+     optional float  collimatorX1Position = 2;
+	 optional float collimatorX2Position = 3;
+     optional float relativeMU = 4;
+	 optional float correctionFactor = 5;
+}
+
+
+
+
+
+
+
+
+

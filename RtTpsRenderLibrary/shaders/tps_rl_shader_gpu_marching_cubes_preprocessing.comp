@@ -1,0 +1,56 @@
+#version 430
+
+layout(local_size_x=2, local_size_y=2) in;
+
+layout(std430, binding=0) writeonly buffer TotalVertexCount
+{
+    uint total_vertex_count;
+};
+
+layout(r16ui, binding=0) uniform uimageBuffer imageCubeIndex;
+
+uniform usampler1D texVertexCountTable;
+//uniform isampler3D texVolumeData;
+uniform sampler3D texVolumeData;
+uniform ivec3 volumeDim;
+uniform ivec3 calcSpaceDim;
+uniform float isoLevel;
+
+void main()
+{
+    //extand the invocation space to handle the edge
+    ivec3 curr_coord = ivec3(gl_GlobalInvocationID);
+    //we do not need consider the division-by-zero case, because if any dimension of 
+    //calSpaceDim equals to 1, no invocation in computer shader will be executed.
+    vec3 dimScale = vec3(volumeDim - 1) / (calcSpaceDim - 1);
+    vec3 point = (curr_coord * dimScale + 0.5) / volumeDim;
+    vec3 step = 1.0 / volumeDim * dimScale;
+    float voxel[8] = 
+    {
+        texture(texVolumeData, point + step * vec3(0, 0, 0)).r,
+        texture(texVolumeData, point + step * vec3(1, 0, 0)).r,
+        texture(texVolumeData, point + step * vec3(1, 1, 0)).r,
+        texture(texVolumeData, point + step * vec3(0, 1, 0)).r,
+        texture(texVolumeData, point + step * vec3(0, 0, 1)).r,
+        texture(texVolumeData, point + step * vec3(1, 0, 1)).r,
+        texture(texVolumeData, point + step * vec3(1, 1, 1)).r,
+        texture(texVolumeData, point + step * vec3(0, 1, 1)).r,
+    };
+
+    //consider pixel is inside the surface if greater or equal than iso-level
+    int cubeIndex = 0;
+    for(int i = 0; i < 8; ++i)
+    {
+        if (voxel[i] >= isoLevel) cubeIndex |= (0x1<<i);
+    }
+
+    int p = curr_coord.x + curr_coord.y * volumeDim[0] + 
+            curr_coord.z * volumeDim[1] * volumeDim[0];
+    imageStore(imageCubeIndex, p, uvec4(cubeIndex, 0, 0, 0));
+    //imageAtomicExchange(imageCubeIndex, p, cubeIndex);
+    memoryBarrier();
+
+    //get vertex count
+    uint vertexCount = texelFetch(texVertexCountTable, cubeIndex, 0).r;
+    atomicAdd(total_vertex_count, vertexCount);
+}

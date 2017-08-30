@@ -1,0 +1,7 @@
+import "rt_tps_point.proto";
+package tps.proto;
+
+message RT_TPS_POINT_LIST
+{
+	repeated RT_TPS_POINT points = 1;
+}

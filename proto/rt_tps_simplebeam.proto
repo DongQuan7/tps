@@ -1,0 +1,10 @@
+package tps.proto;
+
+message RT_TPS_SimpleBeam
+{
+	required float gantry_start_angle = 1;
+	optional float gantry_arc_length = 2;
+    optional bool is_clockwise = 3;
+	required float collimator_angle = 4;
+	required float couch_angle = 5;
+}

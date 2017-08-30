@@ -1,0 +1,16 @@
+package tps.proto;
+
+message RtTpsProtoSeriesGroup
+{
+    required string groupUid			= 1;
+    optional string groupName			= 2;
+    optional int32  groupType			= 3;
+    optional string mainSeries			= 4;
+    repeated string seriesList 	                = 5;
+}
+
+message RtTpsProtoRepeatedSeriesGroup
+{
+    repeated RtTpsProtoSeriesGroup series_group		= 1;
+}
+

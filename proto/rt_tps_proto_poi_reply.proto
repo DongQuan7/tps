@@ -1,0 +1,10 @@
+import "rt_tps_proto_header.proto";
+import "rt_tps_proto_poi.proto";
+package tps.proto;
+
+message RtTpsProtoPoiReply
+{
+    required RtTpsProtoHeader	header = 1;
+    optional RtTpsProtoPoi    poi 	 = 2;
+
+}

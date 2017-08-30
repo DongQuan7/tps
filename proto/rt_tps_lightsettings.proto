@@ -1,0 +1,22 @@
+package tps.proto;
+
+message RT_TPS_LightSettings
+{
+	optional float scale = 1;
+	optional float rotateX = 2;
+	optional float rotateY = 3;
+	optional float rotateZ = 4;
+	optional float specfactor = 5;
+	optional float ambfactor = 6;
+	optional float difffactor = 7;
+	optional float shininess = 8;
+	optional float lightX = 9;
+	optional float lightY = 10;
+	optional float lightZ = 11;
+	optional int32 displayMode = 12; // 0, line mode; 1, mesh fill
+	optional int32 smoothness = 13; // counts of pts to be reduced
+	optional bool  useCameraLight = 14; // true, use camer as light; false, use fixed light
+	optional int32 startStripIndex = 15;
+	optional int32 endStripIndex = 16;
+	optional bool  showMeshVertex = 17;
+}

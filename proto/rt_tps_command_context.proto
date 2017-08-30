@@ -1,0 +1,11 @@
+
+package tps.proto;
+
+message RtTpsCommandContext
+{
+	required int32 command_id = 1;
+	optional string sent_data = 2;
+    optional string receiver = 3;
+	optional string sender = 4;
+	optional string reserved = 5;
+}

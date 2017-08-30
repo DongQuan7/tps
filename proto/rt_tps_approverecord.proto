@@ -1,0 +1,16 @@
+package tps.proto;
+message RtTpsApproveRecord
+{       
+    required string uid				                 = 1;
+	required string object_uid			             = 2;
+    required int32  objetc_type                      = 3;
+	required string approver             	         = 4;
+	required string approve_datetime			     = 5;
+    optional bool isApprove                          = 6;
+    optional string changeset			             = 7;
+}
+
+message RtTpsRepeatedApproveRecord
+{
+	repeated RtTpsApproveRecord approverecordlist 	= 1;
+}

@@ -1,0 +1,18 @@
+package tps.proto;
+
+message RT_TPS_MOVE_VOI
+{
+	optional int32 cellid = 1;
+    optional int32 viewerid = 2;
+	optional float precoordx = 3;
+	optional float precoordy = 4;
+	optional float curcoordx = 5;
+	optional float curcoordy = 6;
+    optional string voiuid = 7;
+	optional float offsetx = 8;
+	optional float offsety = 9;
+	optional float offsetz = 10;
+	optional bool movedbyoff = 11;
+	optional bool isPanCurrentSlice = 12;
+	optional int32 mouseActionType = 13;
+}

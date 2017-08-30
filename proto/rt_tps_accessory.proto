@@ -1,0 +1,18 @@
+package tps.proto;
+
+message RT_TPS_Accessory
+{
+	required string accessoryUID = 1;
+	optional string machineUID = 2;
+	optional int32 accessoryType = 3;
+	optional double wedgeAngle = 4;
+	optional int32 wedgeOrientation = 5;
+	optional string accessoryName = 6;
+	optional string commissionUID = 7;
+	optional string machineName = 15;
+}
+
+message RT_TPS_AccessoryList
+{
+	repeated RT_TPS_Accessory accessory = 1;
+}

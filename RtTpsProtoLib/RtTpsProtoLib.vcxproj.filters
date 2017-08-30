@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="rt_tps_delete.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_dvhdata.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_dvhdatalist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_mprpageturn.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_poigroup.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_point.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_unit.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_unitlist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_voieditinfo.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_gridsize.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_gridboundary.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_rotate.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_optinput.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_optoutput.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_manual_fusion.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_mouse_info.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_contourslices.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_selectcontourslices.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_landmarkpoint.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_move_voi.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_mesh.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_create_phantom.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_stringlist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_beam_template.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_simplebeam.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_measureangle.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_simplevoi.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_voi_template.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_registration_feedback.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_prescription.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_segment.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_series.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_normalizationgroup.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_patient.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_plan.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_poi.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_beam.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_constraint.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_course.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_patient_tree_data.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_optimizer_template.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_applicator.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_admin_tree_data.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_doseline.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_doselinesetting.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_doselineparams.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_doselinetemplate.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="tda_imagereferenceinfo.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_lightsettings.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_optgoals.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_rotateshaded.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_zoomshaded.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_drrsetting.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_tray_factor.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_mouse_action.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_poi_action.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_poi_reply.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_header.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_voi_advanced.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_accessory.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_commissionedunit.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_machine.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_addbeamfromtemplateparams.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_cornertext_bev.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_cornertext_mpr.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_proto.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_ct2densitytable.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_ct2densitytablelist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_mlceditinfo.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_series_group.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_referenceimage.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_pointlist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_block.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_ct2densitytable.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_mlceditinfo.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_ct2densitytablelist.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_table.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_ssd.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_voi.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_series_table.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_planqaaddnormalgroupconfigtable.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_photonsmontecarlo.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_machinesettingconfig.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_gallery.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_site.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_convolution.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_electroncontamination.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_fluencecorrection.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_importfromfile.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_importfromgsstfile.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_initilizeenergyweight.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_montecarlo.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_pencilbeam.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_scp.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_ms_wedgefactorSetting.pb.cc">
+      <Filter>Source Files\proto\machineSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_beam_update.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_bolus.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_voi_setting.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_command_context.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_beam_operate.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_template.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_approverecord.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_beamssd.pb.cc">
+      <Filter>Source Files\proto</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_dvhdatalist.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_delete.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_dvhdata.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mprpageturn.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_poigroup.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_point.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_unit.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_unitlist.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_voieditinfo.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gridsize.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gridboundary.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_rotate.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optinput.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optoutput.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_manual_fusion.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mouse_info.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_move_voi.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_contourslices.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_landmarkpoint.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_landmarkpoint.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_selectcontourslices.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_create_phantom.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mesh.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_stringlist.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_voi_template.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_beam_template.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_simplebeam.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_measureangle.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_simplevoi.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_registration_feedback.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_prescription.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_segment.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_normalizationgroup.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_patient.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_plan.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_constraint.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_course.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_patient_tree_data.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optimizer_template.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ct2densitytable.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ct2densitytablelist.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doseline.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselinesetting.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_applicator.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_admin_tree_data.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselineparams.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselinetemplate.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\tda_imagereferenceinfo.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_lightsettings.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optgoals.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_zoomshaded.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_rotateshaded.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_drrsetting.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_tray_factor.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_mouse_action.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi_action.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi_reply.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_header.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi_advanced.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_accessory.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_commissionedunit.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_machine.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_cornertext_bev.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_cornertext_mpr.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_addbeamfromtemplateparams.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_proto.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mlceditinfo.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_doselinesetting.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series_group.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_referenceimage.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_pointlist.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_block.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mlceditinfo.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_table.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ssd.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series_table.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_planqaaddnormalgroupconfigtable.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_photonsmontecarlo.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_machinesettingconfig.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gallery.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_site.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_convolution.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_electroncontamination.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_fluencecorrection.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_importfromfile.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_importfromgsstfile.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_initilizeenergyweight.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_montecarlo.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_pencilbeam.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_scp.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_wedgefactorSetting.pb.h">
+      <Filter>Header Files\proto\machineSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam_update.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_bolus.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi_setting.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_command_context.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam_operate.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_template.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_approverecord.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beamssd.pb.h">
+      <Filter>Header Files\proto</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{56e25d45-abc5-496e-addc-8578898c74a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b80cd5e8-c6a7-4371-a122-9dded70b92bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\proto">
+      <UniqueIdentifier>{65ec3599-7210-4a2a-a7c0-f39a3c5e85bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proto">
+      <UniqueIdentifier>{099c12ae-aa34-4605-b946-a7b446a11778}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proto\machineSetting">
+      <UniqueIdentifier>{a0bb3361-4c6c-4ac4-b5dd-3901d36ac9e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\proto\machineSetting">
+      <UniqueIdentifier>{77fb2663-f9be-42a9-8f06-3192223676b9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsProtoLib.rc" />
+  </ItemGroup>
+</Project>

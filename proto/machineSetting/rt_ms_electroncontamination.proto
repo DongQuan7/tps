@@ -1,0 +1,15 @@
+package ms.proto;
+
+message RT_MS_ElectronContamination
+{ 
+	optional bool  electronContaminationFlag = 1;
+	optional float electronMaxDepth = 2;
+    optional float surfaceDose = 3;
+	optional float depthCoefficientK = 4;
+	optional float offaxisCoefficientA = 5;
+	optional float df = 6;
+	optional float sf = 7;
+	optional float cOne = 8;
+	optional float cTwo = 9;
+	optional float cThree = 10;
+}

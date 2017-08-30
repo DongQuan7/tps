@@ -1,0 +1,21 @@
+import "rt_tps_proto_constraint.proto";
+package tps.proto;
+message RtTpsProtoPrescription
+{
+    optional string prescriptionUID					= 1;
+    optional string prescriptionName				= 2;
+    optional float dosePerFraction					= 3;
+    optional int32 fractionsNumber					= 4;
+    optional string courseUID						= 5;
+    repeated RtTpsProtoConstraint constraintList	= 6;
+    optional bool isgating              			= 7;
+	optional string siteUID                         = 8;
+	optional int32 binMode							= 9;
+	optional double beamOnRangeStart				= 10;
+	optional double beamOnRangeEnd					= 11;
+}
+
+message RtTpsProtoRepeatedPrescription
+{
+	repeated RtTpsProtoPrescription prescriptionList	= 1;
+}

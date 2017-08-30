@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED6D86ED-07CD-4FBC-9B7E-507E61DB9582}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <RootNamespace>RtTpsCommands</RootNamespace>
+    <ProjectName>RtTpsBusinessLogic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\UIH\bin_debug\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;_DEBUG;_WINDOWS;_USRDLL;TPS_BL_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <OpenMPSupport>true</OpenMPSupport>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4996;4702</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessToFile>false</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\rt;..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RtAlgDataLayer.lib;McsfLogger.lib;McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;RtTpsFramework.lib;RtTpsProtoLib.lib;RtTpsDataAccess.lib;RtTpsDatabaseWrapper.lib;RtTpsDoseProxy.lib;RtTpsAlgorithmProxy.lib;RtAlgOptFramework.lib;RtTpsRenderController.lib;RtTpsRenderLibrary.lib;RtTpsROIUtility.lib;OpenMeshCored.lib;OpenMeshToolsd.lib;McsfDatabaseDicomUIDManager.lib;McsfDataHeader.lib;McsfDicomConvertor.lib;RtAlgCommission.lib;RtAlgLSVWCommon.lib;RtAlgVirtualWedge.lib;RtTpsCertifiedLib.lib;McsfViewer3DScene.lib;McsfViewer3DCommon.lib;McsfViewer3DGraphicObject.lib;McsfSystemEnvironmentConfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs\McsfMedViewer3D;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\rt;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;NDEBUG;_WINDOWS;_USRDLL;TPS_BL_EXPORT;ULIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <OpenMPSupport>true</OpenMPSupport>
+      <DisableSpecificWarnings>4743;4996;4702</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\rt;..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RtAlgDataLayer.lib;McsfLogger.lib;McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;RtTpsFramework.lib;RtTpsProtoLib.lib;RtTpsDataAccess.lib;RtTpsDatabaseWrapper.lib;RtTpsDoseProxy.lib;RtTpsAlgorithmProxy.lib;RtAlgOptFramework.lib;RtTpsRenderController.lib;RtTpsRenderLibrary.lib;RtTpsROIUtility.lib;OpenMeshCore.lib;OpenMeshTools.lib;McsfDatabaseDicomUIDManager.lib;McsfDataHeader.lib;McsfDicomConvertor.lib;RtAlgCommission.lib;RtAlgLSVWCommon.lib;RtAlgVirtualWedge.lib;RtTpsCertifiedLib.lib;McsfViewer3DScene.lib;McsfViewer3DCommon.lib;McsfViewer3DGraphicObject.lib;McsfSystemEnvironmentConfig.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_add_roi_advanced_parameter_structrues.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_normgroup.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_registration_result.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_approve_voi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_beam_block_update.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_beam_segment_update.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_bolus_add.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_change_ct2densitytable.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_change_evaluation_order.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_compare_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_copyphantomtoqa.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_internal_patient.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_merge_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_deleteeasyplan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_deleteqaplan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_duplicate_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_calculatedose.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_change_selected_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_delete_image.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_delete_poi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_loadrtimageinfo.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_load_image.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_nudge_aperture.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_take_igrt.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_insert_poi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_update_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easy_plan_beam_create.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easy_plan_beam_delete.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_normgroup.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_registration_region.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_set_isocenter.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_edit_roi_via_new_contour.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_exportslicedose.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_get_proto_patient_tree.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_load_patient.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_gallery_volume_change_slice.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_generate_mesh.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_getssd.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_get_density_overlapped_voi_list.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_helper.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_interpolate_voi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadpatientpartial.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadplan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_loadseries.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_manual_registration.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_merge_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_getcurrentslice.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_movevoi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_operatecontourslices.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_opposite_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_pancurrentslicecontour.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_create.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_update.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_planqa_createnormalgroup.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_jump.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_update_attribute.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_preview_page_turn.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_remove_small_contours.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_roi_add.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_rotate_arc_beam_on_mpr.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_rotate_imrt_beam_on_mpr.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_save_voi_as_table.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_selectcontourslices.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_setmlctransparency.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_showgrid.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_smooth_voi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_start_registration.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_switch_table.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_updatedosegridboundary.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_updategridsize.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_beam_attributes.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_normgroup_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_update_table.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_update_attribute.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_dose_volume_value.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_hot_spots.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_jump_to.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_manset_density.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_voi_redo_undo_subvolume.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_volume4d_change_current.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_volume_change_slice.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_defs.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_dosecalculationimpl.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_remove_registration_relationship.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_mpr_show_fusion.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_load_objects.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_opt_observer.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_save_objects.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_business_logic_controller.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_easyplan_addplan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_clear_data_manager.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_plan.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_normgroup.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_admin_startup.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_auto_contouring.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_create_beam.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_delete_voi.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_delete_plans.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_create_3d.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_poi_delete.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_get_proto_patient_tree.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_load_patient_tree.h" />
+    <ClInclude Include="..\include\RtTpsBusinessLogic\tps_bl_cmd_phantom_delete.h" />
+    <ClInclude Include="stdafx.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="tps_bl_mprprinter.h" />
+    <ClInclude Include="tps_bl_printerbase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4091;4503;4996;4127;4251</DisableSpecificWarnings>
+      <DisableSpecificWarnings Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4127</DisableSpecificWarnings>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</WholeProgramOptimization>
+    </ClCompile>
+    <ClCompile Include="tps_bl_cmd_approve_normgroup.cpp" />
+    <ClCompile Include="tps_bl_cmd_approve_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_approve_registration_result.cpp" />
+    <ClCompile Include="tps_bl_cmd_approve_voi.cpp" />
+    <ClCompile Include="tps_bl_cmd_beam_block_update.cpp" />
+    <ClCompile Include="tps_bl_cmd_beam_segment_update.cpp" />
+    <ClCompile Include="tps_bl_cmd_bolus_add.cpp" />
+    <ClCompile Include="tps_bl_cmd_change_ct2densitytable.cpp" />
+    <ClCompile Include="tps_bl_cmd_change_evaluation_order.cpp" />
+    <ClCompile Include="tps_bl_cmd_compare_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_copyphantomtoqa.cpp" />
+    <ClCompile Include="tps_bl_cmd_create_merge_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_create_internal_patient.cpp" />
+    <ClCompile Include="tps_bl_cmd_deleteeasyplan.cpp" />
+    <ClCompile Include="tps_bl_cmd_deleteqaplan.cpp" />
+    <ClCompile Include="tps_bl_cmd_duplicate_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_calculatedose.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_change_selected_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_delete_image.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_delete_poi.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_loadrtimageinfo.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_load_image.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_nudge_aperture.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_take_igrt.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_update_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_update_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_update_insert_poi.cpp" />
+    <ClCompile Include="tps_bl_cmd_easy_plan_beam_create.cpp" />
+    <ClCompile Include="tps_bl_cmd_easy_plan_beam_delete.cpp" />
+    <ClCompile Include="tps_bl_cmd_edit_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_edit_normgroup.cpp" />
+    <ClCompile Include="tps_bl_cmd_edit_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_edit_registration_region.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_set_isocenter.cpp" />
+    <ClCompile Include="tps_bl_cmd_edit_roi_via_new_contour.cpp" />
+    <ClCompile Include="tps_bl_cmd_exportslicedose.cpp" />
+    <ClCompile Include="tps_bl_cmd_gallery_get_proto_patient_tree.cpp" />
+    <ClCompile Include="tps_bl_cmd_gallery_load_patient.cpp" />
+    <ClCompile Include="tps_bl_cmd_gallery_volume_change_slice.cpp" />
+    <ClCompile Include="tps_bl_cmd_generate_mesh.cpp" />
+    <ClCompile Include="tps_bl_cmd_getssd.cpp" />
+    <ClCompile Include="tps_bl_cmd_get_density_overlapped_voi_list.cpp" />
+    <ClCompile Include="tps_bl_cmd_interpolate_voi.cpp" />
+    <ClCompile Include="tps_bl_cmd_helper.cpp" />
+    <ClCompile Include="tps_bl_cmd_loadpatientpartial.cpp" />
+    <ClCompile Include="tps_bl_cmd_loadplan.cpp" />
+    <ClCompile Include="tps_bl_cmd_loadseries.cpp" />
+    <ClCompile Include="tps_bl_cmd_manual_registration.cpp" />
+    <ClCompile Include="tps_bl_cmd_merge_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_movevoi.cpp" />
+    <ClCompile Include="tps_bl_cmd_operatecontourslices.cpp" />
+    <ClCompile Include="tps_bl_cmd_opposite_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_pancurrentslicecontour.cpp" />
+    <ClCompile Include="tps_bl_cmd_phantom_create.cpp" />
+    <ClCompile Include="tps_bl_cmd_phantom_update.cpp" />
+    <ClCompile Include="tps_bl_cmd_planqa_createnormalgroup.cpp" />
+    <ClCompile Include="tps_bl_cmd_poi_jump.cpp" />
+    <ClCompile Include="tps_bl_cmd_poi_update_attribute.cpp" />
+    <ClCompile Include="tps_bl_cmd_remove_small_contours.cpp" />
+    <ClCompile Include="tps_bl_cmd_roi_add.cpp" />
+    <ClCompile Include="tps_bl_cmd_rotate_arc_beam_on_mpr.cpp" />
+    <ClCompile Include="tps_bl_cmd_rotate_imrt_beam_on_mpr.cpp" />
+    <ClCompile Include="tps_bl_cmd_save_voi_as_table.cpp" />
+    <ClCompile Include="tps_bl_cmd_selectcontourslices.cpp" />
+    <ClCompile Include="tps_bl_cmd_setmlctransparency.cpp" />
+    <ClCompile Include="tps_bl_cmd_showgrid.cpp" />
+    <ClCompile Include="tps_bl_cmd_smooth_voi.cpp" />
+    <ClCompile Include="tps_bl_cmd_start_registration.cpp" />
+    <ClCompile Include="tps_bl_cmd_switch_table.cpp" />
+    <ClCompile Include="tps_bl_cmd_updatedosegridboundary.cpp" />
+    <ClCompile Include="tps_bl_cmd_updategridsize.cpp" />
+    <ClCompile Include="tps_bl_cmd_update_normgroup_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_update_table.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_dose_volume_value.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_hot_spots.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_jump_to.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_manset_density.cpp" />
+    <ClCompile Include="tps_bl_cmd_getcurrentslice.cpp" />
+    <ClCompile Include="tps_bl_cmd_preview_page_turn.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_redo_undo_subvolume.cpp" />
+    <ClCompile Include="tps_bl_cmd_volume4d_change_current.cpp" />
+    <ClCompile Include="tps_bl_cmd_volume_change_slice.cpp" />
+    <ClCompile Include="tps_bl_load_objects.cpp" />
+    <ClCompile Include="tps_bl_opt_observer.cpp" />
+    <ClCompile Include="tps_bl_save_objects.cpp" />
+    <ClCompile Include="tps_bl_cmd_update_beam_attributes.cpp" />
+    <ClCompile Include="tps_bl_cmd_voi_update_attribute.cpp" />
+    <ClCompile Include="tps_bl_dosecalculationimpl.cpp" />
+    <ClCompile Include="tps_bl_cmd_remove_registration_relationship.cpp" />
+    <ClCompile Include="tps_bl_cmd_mpr_show_fusion.cpp" />
+    <ClCompile Include="tps_business_logic_controller.cpp" />
+    <ClCompile Include="tps_bl_cmd_easyplan_addplan.cpp" />
+    <ClCompile Include="tps_business_logic_controller_commission.cpp" />
+    <ClCompile Include="tps_business_logic_controller_commission_ex.cpp" />
+    <ClCompile Include="tps_business_logic_controller_commission_template.cpp" />
+    <ClCompile Include="tps_business_logic_controller_play_movie.cpp" />
+    <ClCompile Include="tps_business_logic_controller_voi_advanced.cpp" />
+    <ClCompile Include="tps_bl_cmd_clear_data_manager.cpp" />
+    <ClCompile Include="tps_bl_cmd_create_plan.cpp" />
+    <ClCompile Include="tps_bl_cmd_create_normgroup.cpp" />
+    <ClCompile Include="tps_bl_cmd_admin_startup.cpp" />
+    <ClCompile Include="tps_bl_cmd_auto_contouring.cpp" />
+    <ClCompile Include="tps_bl_cmd_create_beam.cpp" />
+    <ClCompile Include="tps_bl_cmd_delete_voi.cpp" />
+    <ClCompile Include="tps_bl_cmd_delete_plans.cpp" />
+    <ClCompile Include="tps_bl_cmd_poi_create_3d.cpp" />
+    <ClCompile Include="tps_bl_cmd_poi_delete.cpp" />
+
+    <ClCompile Include="tps_bl_cmd_get_proto_patient_tree.cpp" />
+    <ClCompile Include="tps_bl_cmd_load_patient_tree.cpp" />
+    <ClCompile Include="tps_bl_cmd_phantom_delete.cpp" />
+    <ClCompile Include="tps_bl_mprprinter.cpp" />
+    <ClCompile Include="tps_bl_printerbase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

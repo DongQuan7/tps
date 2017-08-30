@@ -1,0 +1,15 @@
+import "rt_tps_simplebeam.proto";
+package tps.proto;
+
+message RT_TPS_BeamTemplate
+{
+    optional string templateUID = 1;
+    optional string templateName = 2;
+    optional string templateDescription = 3;
+    repeated RT_TPS_SimpleBeam simpleBeam = 4;
+}
+
+message RT_TPS_BeamTemplate_List
+{
+    repeated RT_TPS_BeamTemplate beamTemplate = 1;
+}

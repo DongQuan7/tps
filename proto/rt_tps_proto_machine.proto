@@ -1,0 +1,57 @@
+package tps.proto;
+message RtTpsProtoMachine
+{
+	required string machineUID = 1;
+	optional string machineName = 2;
+	optional double gantryMin = 3;
+	optional double gantryMax = 4;
+	optional double tableMin = 5;
+	optional double tableMax = 6;
+	optional double collimatorMin = 7;
+	optional double collimatorMax = 8;
+    optional double gantryCWRange = 9;
+    optional double gantryCCWRange = 10;
+	optional double jaw_x1_min = 11;
+	optional double jaw_x1_max = 12;
+	optional double jaw_x2_min = 13;
+	optional double jaw_x2_max = 14;
+	optional double jaw_y1_min = 15;
+	optional double jaw_y1_max = 16;
+	optional double jaw_y2_min = 17;
+	optional double jaw_y2_max = 18;
+	optional bool supported_apetureblock = 19;
+	optional bool supported_shieldblock = 20;
+	optional bool supported_xjaw = 21;
+	optional bool supported_yjaw = 22;
+	optional bool xjaw_issymmetry = 23;
+	optional bool yjaw_issymmetry = 24;
+	optional bool xjaw_tracking = 25;
+	optional bool yjaw_tracking = 26;
+	optional RtTpsMlcSetting mlcsetting = 27;
+	optional float sourcetoblocktraydistance = 28;
+	optional bool isActive = 29;
+    optional bool isForceJawFollow = 30;
+	optional bool isCrcValid = 31;
+	optional double gantryMaxSpeed = 32;
+	optional double blockHeight = 33;
+}
+
+message RtTpsMlcSetting
+{
+    optional int32  numberOfPairs = 1;
+    optional double sourceToMLCtopDistance = 2;
+    optional double minLeafJawOverlap = 3;
+    optional double minGap = 4;
+    optional double maxLeafSpeed = 5;
+    optional double minTipPosition = 6;
+    optional double maxTipPosition = 7;
+    optional bool   leafInterdigitation = 8;
+    optional double maxLeafoutofCarriageDistance = 9;
+    optional int32  mlcDirection = 10; //0, unknown; 1, x; 2, y;
+    repeated double leafpairupperboundary = 11; // 如果是N对叶片，则这个数组就是N+1个元素。数组记录的是从上到下的叶片参数，单位是mm
+}
+
+message RtTpsProtoRepeatedMachine
+{
+	repeated RtTpsProtoMachine machineList 	= 1;
+}

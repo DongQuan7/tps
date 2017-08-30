@@ -1,0 +1,40 @@
+package tps.proto;
+message RtTpsProtoSegment
+{
+	required string segmentUID = 1;
+	optional float segmentWeight = 2;
+	optional float segmentMu = 3;
+	optional string beamUID = 4;
+	optional int32 SequenceNumber = 5;
+	optional RtTpsProtoJaw startJaw = 6;
+	optional RtTpsProtoJaw endJaw = 7;
+	repeated RtTpsProtoMlcLeaf startMlcLeaves = 8;
+	repeated RtTpsProtoMlcLeaf endMlcLeaves = 9;
+	optional double startgantryangle = 10;
+	optional double endgantryangle = 11;
+	optional double starttablerotationangle = 12;
+	optional double endtablerotationangle = 13;
+	optional double arclength = 14;
+	optional float startssd = 15;
+	optional float endssd = 16;
+}
+
+message RtTpsProtoRepeatedSegment
+{
+	repeated RtTpsProtoSegment segmentList	= 1;
+}
+
+message RtTpsProtoJaw
+{
+	optional float X1 = 1;
+	optional float X2 = 2;
+	optional float Y1 = 3;
+	optional float Y2 = 4;
+}
+
+message RtTpsProtoMlcLeaf
+{
+	optional int32 SequenceNumber = 1;
+	optional float X1 = 2;
+	optional float X2 = 3;
+}

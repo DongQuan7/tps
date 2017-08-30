@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB429DD0-23DC-4761-B291-EFA74041153D}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>RtTpsCertifyLib</RootNamespace>
+    <ProjectName>RtTpsCertifiedLib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CLRSupport>false</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\lib_$(Configuration)\rt\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\..\UIH\lib\rt\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;_DEBUG;_WINDOWS;_USRDLL;ULIB;TPS_DA_EXPORT;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\Include;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\mcs\McsfMedViewer3D</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DisableSpecificWarnings>4091;4503;4996;4127;4251</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;McsfLogger.lib;McsfAlgoAutoContour.lib;RtTpsFramework.lib;RtTpsProtoLib.lib;RTFWKDataLayer.lib;RtTpsDatabaseWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\rt;..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</ImportLibrary>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\external;..\..\..\..\UIH\lib_$(configuration)\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OutputFile>..\..\..\..\UIH\lib_$(Configuration)\rt\$(TargetName).lib</OutputFile>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;TEST_PERFORMANCE_ON;NDEBUG;_WINDOWS;_USRDLL;ULIB;TPS_DA_EXPORT;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <AdditionalIncludeDirectories>..\Include;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\mcs\McsfMedViewer3D</AdditionalIncludeDirectories>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <DisableSpecificWarnings>4091; 4503; 4996;4127</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib;McsfGeometry.lib;McsfLogger.lib;McsfAlgoAutoContour.lib;RtTpsFramework.lib;RtTpsProtoLib.lib;RTFWKDataLayer.lib;RtTpsDatabaseWrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;..\..\..\..\UIH\lib\rt;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfViewer3DArithmetic.lib;Mcsf3DArithmetic.lib</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedautovois.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedbeam.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedblock.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedcontourslices.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedconvolution.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifieddelete.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifieddoseline.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedelectroncontamination.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedenergyweight.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedgridboundary.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedgridsize.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedimportfromfile.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedimportgsttfromfile.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedlandmarkpoint.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmachinesetting.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmesh.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmlceditinfo.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmontecarlo.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmouseinfo.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedmovevoi.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedoptoutput.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedpencilbeam.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedplan.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedpoint3d.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedscpinformation.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedselectcontourslices.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedsmartcontour.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedunit.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedvector3d.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedvoi.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedwedgefactor.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certifiedwedgefield.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_imagereferenceinfo.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_landmarks_points.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_poi.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_poidose.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_registation_feedback.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_certified_segment.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_cert_cornertext_bev.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_cert_cornertext_mpr.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_cert_cornertext_mpr_gallery.h" />
+    <ClInclude Include="..\include\RtTpsCertifiedLib\rt_tps_doseoptimizationparam.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rt_tps_certifiedautovois.cpp" />
+    <ClCompile Include="rt_tps_certifiedbeam.cpp" />
+    <ClCompile Include="rt_tps_certifiedblock.cpp" />
+    <ClCompile Include="rt_tps_certifiedcontourslices.cpp" />
+    <ClCompile Include="rt_tps_certifieddelete.cpp" />
+    <ClCompile Include="rt_tps_certifieddoseline.cpp" />
+    <ClCompile Include="rt_tps_certifiedgridboundary.cpp" />
+    <ClCompile Include="rt_tps_certifiedgridsize.cpp" />
+    <ClCompile Include="rt_tps_certifiedlandmarkpoint.cpp" />
+    <ClCompile Include="rt_tps_certifiedmesh.cpp" />
+    <ClCompile Include="rt_tps_certifiedmlceditinfo.cpp" />
+    <ClCompile Include="rt_tps_certifiedmouseinfo.cpp" />
+    <ClCompile Include="rt_tps_certifiedmovevoi.cpp" />
+    <ClCompile Include="rt_tps_certifiedoptoutput.cpp" />
+    <ClCompile Include="rt_tps_certifiedplan.cpp" />
+    <ClCompile Include="rt_tps_certifiedpoint3d.cpp" />
+    <ClCompile Include="rt_tps_certifiedselectcontourslices.cpp" />
+    <ClCompile Include="rt_tps_certifiedsmartcontour.cpp" />
+    <ClCompile Include="rt_tps_certifiedunit.cpp" />
+    <ClCompile Include="rt_tps_certifiedvector3d.cpp" />
+    <ClCompile Include="rt_tps_certifiedvoi.cpp" />
+    <ClCompile Include="rt_tps_certified_imagereferenceinfo.cpp" />
+    <ClCompile Include="rt_tps_certified_landmarks_points.cpp" />
+    <ClCompile Include="rt_tps_certified_poi.cpp" />
+    <ClCompile Include="rt_tps_certified_registation_feedback.cpp" />
+    <ClCompile Include="rt_tps_certified_segment.cpp" />
+    <ClCompile Include="rt_tps_cert_cornertext_bev.cpp" />
+    <ClCompile Include="rt_tps_cert_cornertext_mpr.cpp" />
+    <ClCompile Include="rt_tps_cert_cornertext_mpr_gallery.cpp" />
+    <ClCompile Include="rt_tps_doseoptimizationparam.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

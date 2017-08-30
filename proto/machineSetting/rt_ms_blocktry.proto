@@ -1,0 +1,8 @@
+package ms.proto;
+
+message RT_MS_BlockTryInfo
+{
+	optional double penumbra = 1;
+	optional double trayfactor = 2;
+
+}

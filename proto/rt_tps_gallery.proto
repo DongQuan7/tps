@@ -1,0 +1,169 @@
+//import "rt_tps_proto.proto";
+//import "rt_tps_serieslist.proto";
+package tps.proto;
+
+message RT_TPS_Gallery_PatientTreeData
+{
+	optional RT_TPS_Gallery_Patient patient				= 1;
+	repeated RT_TPS_Gallery_Course courseList			= 2;
+	repeated RT_TPS_Gallery_Series seriesList			= 3;
+    	repeated RT_TPS_Gallery_SeriesGroup  seriesGroup                = 4;
+}
+
+message RT_TPS_Gallery_Patient
+{
+	required string patientUID		= 1;
+	optional string patientNamePrefix 	= 2;
+	optional string patientFirstName 	= 3;
+	optional string patientMiddleName 	= 4;
+	optional string patientLastName 	= 5;
+	optional string patientNameSuffix 	= 6;
+	optional string patientID		= 7;
+	optional int32  patientsex		= 8;
+	optional string patientDateOfBirth 	= 9;
+}
+
+//message RT_TPS_Gallery_Courses
+//{
+//    required RT_TPS_Proto protoInfo = 1;
+//    repeated RT_TPS_Gallery_Course courses = 2;
+//}
+
+message RT_TPS_Gallery_Course
+{   
+    required string courseUID 		= 1;
+    optional string courseName 		= 2;
+    optional string patientUID 		= 3;
+    required bool hasbeamgroup 		= 4;
+    //repeated RT_TPS_Gallery_Series seriesList = 4;
+    //repeated RT_TPS_Gallery_4DCT series4DCTList = 4;
+    //repeated RT_TPS_SeriesInformation seriesList = 5;    
+}
+
+message RT_TPS_Gallery_EditCourse
+{
+    required string patientuid = 1;
+    repeated RT_TPS_Gallery_EditCourseItem addedcourses = 2;
+    repeated RT_TPS_Gallery_EditCourseItem deletedcourses = 3;
+    repeated RT_TPS_Gallery_EditCourseItem updatedcourses = 4;
+}
+
+message RT_TPS_Gallery_EditCourseItem
+{
+    optional string uid = 1; 
+    optional string name = 2;
+    repeated string addedseriesuids = 3;
+    repeated string removedseriesuids = 4;
+}
+
+message RT_TPS_Gallery_Series  // CourseSeries
+{
+    required string seriesUID = 1;
+    required float windowingCenter = 2;
+    required float windowingWidth = 3;
+    required int32 sliceCount = 4;
+    required int32 xDimension = 5;
+    required int32 yDimension = 6;
+    required float xPixelSpacing = 7;
+    required float yPixelSpacing = 8;
+    required float sliceSpacing = 9;
+    optional string modality = 10;
+    optional int32 bitAllocated = 11;
+    optional string seriesTime = 12;
+    optional string seriesDate = 13;
+    optional string seriesDescription = 14;
+    optional string patientPosition = 15;
+    optional bytes imageSliceBuffer = 16;
+    optional bool isCopied = 17;
+    optional int32 seriesNumber = 18;
+    optional string frameOfReferenceUID = 19; 
+    optional string ManufacturerModelName = 20;
+    required bool hasVOI = 21;
+    optional string sliceThickness = 22;
+    //study
+    optional string studyID = 23;
+    optional string studyDescription = 24;
+    //patient
+    optional string patientName = 25;
+    optional string patientID = 26;
+    optional string patientBirthday = 27;
+    optional string patientAge = 28;
+    optional string patientSex = 29;
+    //other
+    optional string institutionName = 30;
+    optional string manufacturer = 31;
+	optional string groupUID = 32;
+	
+    //optional string CT2DensityTableName = 22;
+    //optional string sectionType = 23;
+}
+
+message RT_TPS_Gallery_SeriesGroup
+{
+    required string groupUID			= 1;
+    optional string groupName			= 2;
+    optional int32  groupType			= 3;
+    optional string mainSeries			= 4;
+    repeated string seriesList 	        	= 5;
+}
+
+message RT_TPS_Gallery_RepeatedSeriesGroup
+{
+    repeated RT_TPS_Gallery_SeriesGroup series_group		= 1;
+}
+
+//message RT_TPS_Gallery_4DCT
+//{
+//    required string uid = 1;
+//    optional string name = 2;
+//    optional string type = 3;
+//    repeated RT_TPS_Gallery_Series seriesList = 4;
+//}
+
+message RT_TPS_Gallery_CornerInfo
+{
+    optional string patientname = 1;
+    optional string seriesname = 2;
+    optional string seriesdatetime = 3;
+    optional string patientposition = 4;
+    optional double value = 5;
+    optional double density = 6;
+    optional double pixelpositionx = 7;
+    optional double pixelpositiony = 8;
+    optional double pixelpositionz = 9;
+    optional double windowwidth = 10;
+    optional double windowcenter = 11;
+    optional int32 slicenumber = 12;
+    optional int32 totalslicenumber= 13;
+    optional double slicethickness = 14;
+    optional bool isvaluevalid = 15;
+    optional string modality = 16;
+    optional double zoomfactor = 17;
+    optional double rotate = 18;
+}
+
+message RT_TPS_Gallery_CornerInfoVisible
+{
+    required string seriesUID = 1;
+    required bool   isVisible = 2;
+}
+
+message RT_TPS_Gallery_ExpandSeries
+{
+    required string seriesUID = 1;
+    required bool   IsExpandBottom = 2;
+    required int32  SliceNumber =3;
+    required bool   IsSaveAsNewSeries = 4;     
+}
+
+message RT_TPS_Gallery_SliceInfo
+{
+    required int32 currentSlice = 1;
+    required int32 totalSlice   = 2; 
+}
+
+message RT_TPS_Gallery_SaveSeries
+{
+    required string seriesUID = 1;
+    required bool   isSaveAsNewSeries = 2;
+}

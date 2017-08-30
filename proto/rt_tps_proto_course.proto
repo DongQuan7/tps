@@ -1,0 +1,15 @@
+import "rt_tps_proto_plan.proto";
+import "rt_tps_proto_prescription.proto";
+package tps.proto;
+message RtTpsProtoCourse
+{
+	required string courseUID							= 1;
+	optional string courseName							= 2;
+	optional string patientUID							= 3;
+	repeated RtTpsProtoPlan planList					= 4;
+}
+
+message RtTpsProtoRepeatedCourse
+{
+	repeated RtTpsProtoCourse courseList 	= 1;
+}

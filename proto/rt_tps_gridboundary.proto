@@ -1,0 +1,11 @@
+package tps.proto;
+message RT_TPS_GridBoundary
+{
+	required double x = 1;
+	required double y = 2;
+	required int32 action = 3;
+	required int32 lastaction = 4;
+	required int32 viewerControlID = 5;
+    required int32 cellID = 6;
+	required string plan_uid = 7;
+}

@@ -1,0 +1,7 @@
+package tps.proto;
+
+message RT_TPS_REGISTRATION_FEEDBACK
+{
+    required int32 feedBackType = 1;
+    optional string message = 2;
+}

@@ -1,0 +1,21 @@
+import "rt_tps_applicator.proto";
+
+package tps.proto;
+
+message RT_TPS_Unit
+{
+    required string unitUid = 1;
+	required string machineUid = 2;
+	required string machineName = 3;
+	required int32 radiationType = 4;
+	repeated int32 techniqueType = 5;
+	required string unitEnergy = 6;
+	required int32 flatteningfiltermode = 7;
+	required double gantryMin = 8;
+	required double gantryMax = 9;
+	required double tableMin = 10;
+	required double tableMax = 11;
+	required double collimatorMin = 12;
+	required double collimatorMax = 13;
+	repeated RT_TPS_Applicator applicators = 14;
+}

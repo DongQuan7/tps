@@ -1,0 +1,9 @@
+package ms.proto;
+
+message RT_MS_Proto
+{
+    optional string uid = 1;
+	optional string objectType = 2;
+	optional string parent_uid = 3;
+	repeated string filename = 4;
+}

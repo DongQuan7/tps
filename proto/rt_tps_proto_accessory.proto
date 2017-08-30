@@ -1,0 +1,34 @@
+package tps.proto;
+message RtTpsProtoAccessory
+{
+	required string accessoryUID = 1;
+	optional int32 accessoryType = 2;
+	optional string accessoryName = 3;
+	optional double wedgeAngle = 4;
+	optional int32 wedgeOrientation = 5;
+    optional float leftJawMin = 6;
+    optional float leftJawMax = 7;
+    optional float rightJawMin = 8;
+    optional float rightJawMax = 9;
+    optional float topJawMin = 10;
+    optional float topJawMax = 11;
+    optional float bottomJawMin = 12;
+    optional float bottomJawMax = 13;
+}
+
+message RtTpsProtoRepeatedAccessory
+{
+	repeated RtTpsProtoAccessory accessoryList = 1;
+}
+
+//include physical wedge and virtual wedge
+message RtTpsProtoCommissionUnitAccessoryPair
+{
+	required string accessoryUID = 1;
+	required string commissionedunitUID = 2;
+}
+
+message RtTpsProtoRepeatedCommissionUnitAccessoryPair
+{
+	repeated RtTpsProtoCommissionUnitAccessoryPair commissionUnitAccessoryPair 	= 1;
+}

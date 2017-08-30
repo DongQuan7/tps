@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E6D0F33C-298A-488D-B9BB-C80E2799DF34}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Framework</RootNamespace>
+    <ProjectName>RtTpsProtoLib</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\UIH\lib_$(Configuration)\rt\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\UIH\lib\rt\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include\RtTpsProtoLib;..\..\..\..\UIH\include\external;..\Include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4512;4244;4267;4125</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>libprotobuf64d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_$(configuration)\external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;TPS_PROTO_EXPORT;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include\RtTpsProtoLib;..\..\..\..\UIH\include\external;..\Include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4127;4100;4512;4244;4267;4125</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>libprotobuf64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_machinesettingconfig.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_photonsmontecarlo.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_proto.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_convolution.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_approverecord.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_bolus.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_command_context.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_doselinesetting.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_electroncontamination.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_fluencecorrection.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gallery.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_importfromfile.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_importfromgsstfile.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_initilizeenergyweight.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_montecarlo.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_pencilbeam.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_planqaaddnormalgroupconfigtable.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_pointlist.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beamssd.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam_operate.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam_update.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_block.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series_group.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_site.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_table.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series_table.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_template.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi_setting.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_referenceimage.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_scp.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_applicator.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_beam_template.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_contourslices.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_cornertext_bev.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_cornertext_mpr.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_create_phantom.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ct2densitytable.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ct2densitytablelist.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_delete.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_drrsetting.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_dvhdata.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_dvhdatalist.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gridboundary.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_gridsize.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_landmarkpoint.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_lightsettings.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_manual_fusion.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_measureangle.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mesh.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mlceditinfo.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mouse_info.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_move_voi.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_mprpageturn.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optgoals.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optimizer_template.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optinput.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_optoutput.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_poigroup.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_point.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_accessory.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_addbeamfromtemplateparams.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_admin_tree_data.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_beam.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_commissionedunit.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_constraint.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_course.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doseline.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselineparams.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselinesetting.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_doselinetemplate.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_header.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_machine.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_mouse_action.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_normalizationgroup.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_patient.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_patient_tree_data.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_plan.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi_action.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_poi_reply.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_prescription.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_rotateshaded.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_segment.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_series.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_voi_advanced.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_proto_zoomshaded.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_registration_feedback.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_rotate.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_selectcontourslices.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_simplebeam.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_simplevoi.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_ssd.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_stringlist.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_tray_factor.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_voieditinfo.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_unit.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_unitlist.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_tps_voi_template.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\rt_ms_wedgefactorSetting.pb.h" />
+    <ClInclude Include="..\include\RtTpsProtoLib\tda_imagereferenceinfo.pb.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="rt_ms_machinesettingconfig.pb.cc" />
+    <ClCompile Include="rt_ms_photonsmontecarlo.pb.cc" />
+    <ClCompile Include="rt_ms_proto.pb.cc" />
+    <ClCompile Include="rt_ms_convolution.pb.cc" />
+    <ClCompile Include="rt_ms_electroncontamination.pb.cc" />
+    <ClCompile Include="rt_ms_fluencecorrection.pb.cc" />
+    <ClCompile Include="rt_tps_approverecord.pb.cc" />
+    <ClCompile Include="rt_tps_bolus.pb.cc" />
+    <ClCompile Include="rt_tps_command_context.pb.cc" />
+    <ClCompile Include="rt_tps_gallery.pb.cc" />
+    <ClCompile Include="rt_ms_importfromfile.pb.cc" />
+    <ClCompile Include="rt_ms_importfromgsstfile.pb.cc" />
+    <ClCompile Include="rt_ms_initilizeenergyweight.pb.cc" />
+    <ClCompile Include="rt_ms_montecarlo.pb.cc" />
+    <ClCompile Include="rt_ms_pencilbeam.pb.cc" />
+    <ClCompile Include="rt_tps_planqaaddnormalgroupconfigtable.pb.cc" />
+    <ClCompile Include="rt_tps_pointlist.pb.cc" />
+    <ClCompile Include="rt_tps_proto_beamssd.pb.cc" />
+    <ClCompile Include="rt_tps_proto_beam_operate.pb.cc" />
+    <ClCompile Include="rt_tps_proto_beam_update.pb.cc" />
+    <ClCompile Include="rt_tps_proto_block.pb.cc" />
+    <ClCompile Include="rt_tps_proto_series_group.pb.cc" />
+    <ClCompile Include="rt_tps_proto_site.pb.cc" />
+    <ClCompile Include="rt_tps_proto_table.pb.cc" />
+    <ClCompile Include="rt_tps_proto_series_table.pb.cc" />
+    <ClCompile Include="rt_tps_proto_template.pb.cc" />
+    <ClCompile Include="rt_tps_proto_voi.pb.cc" />
+    <ClCompile Include="rt_tps_proto_voi_setting.pb.cc" />
+    <ClCompile Include="rt_tps_referenceimage.pb.cc" />
+    <ClCompile Include="rt_ms_scp.pb.cc" />
+    <ClCompile Include="rt_tps_ssd.pb.cc" />
+    <ClCompile Include="rt_ms_wedgefactorSetting.pb.cc" />
+    <ClCompile Include="rt_tps_applicator.pb.cc" />
+    <ClCompile Include="rt_tps_beam_template.pb.cc" />
+    <ClCompile Include="rt_tps_contourslices.pb.cc" />
+    <ClCompile Include="rt_tps_cornertext_bev.pb.cc" />
+    <ClCompile Include="rt_tps_cornertext_mpr.pb.cc" />
+    <ClCompile Include="rt_tps_create_phantom.pb.cc" />
+    <ClCompile Include="rt_tps_ct2densitytable.pb.cc" />
+    <ClCompile Include="rt_tps_ct2densitytablelist.pb.cc" />
+    <ClCompile Include="rt_tps_delete.pb.cc" />
+    <ClCompile Include="rt_tps_drrsetting.pb.cc" />
+    <ClCompile Include="rt_tps_dvhdata.pb.cc" />
+    <ClCompile Include="rt_tps_dvhdatalist.pb.cc" />
+    <ClCompile Include="rt_tps_gridboundary.pb.cc" />
+    <ClCompile Include="rt_tps_gridsize.pb.cc" />
+    <ClCompile Include="rt_tps_landmarkpoint.pb.cc" />
+    <ClCompile Include="rt_tps_lightsettings.pb.cc" />
+    <ClCompile Include="rt_tps_manual_fusion.pb.cc" />
+    <ClCompile Include="rt_tps_measureangle.pb.cc" />
+    <ClCompile Include="rt_tps_mesh.pb.cc" />
+    <ClCompile Include="rt_tps_mlceditinfo.pb.cc" />
+    <ClCompile Include="rt_tps_mouse_info.pb.cc" />
+    <ClCompile Include="rt_tps_move_voi.pb.cc" />
+    <ClCompile Include="rt_tps_mprpageturn.pb.cc" />
+    <ClCompile Include="rt_tps_optgoals.pb.cc" />
+    <ClCompile Include="rt_tps_optimizer_template.pb.cc" />
+    <ClCompile Include="rt_tps_optinput.pb.cc" />
+    <ClCompile Include="rt_tps_optoutput.pb.cc" />
+    <ClCompile Include="rt_tps_poigroup.pb.cc" />
+    <ClCompile Include="rt_tps_point.pb.cc" />
+    <ClCompile Include="rt_tps_proto.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="rt_tps_proto_accessory.pb.cc" />
+    <ClCompile Include="rt_tps_proto_addbeamfromtemplateparams.pb.cc" />
+    <ClCompile Include="rt_tps_proto_admin_tree_data.pb.cc" />
+    <ClCompile Include="rt_tps_proto_beam.pb.cc" />
+    <ClCompile Include="rt_tps_proto_commissionedunit.pb.cc" />
+    <ClCompile Include="rt_tps_proto_constraint.pb.cc" />
+    <ClCompile Include="rt_tps_proto_course.pb.cc" />
+    <ClCompile Include="rt_tps_proto_doseline.pb.cc" />
+    <ClCompile Include="rt_tps_proto_doselineparams.pb.cc" />
+    <ClCompile Include="rt_tps_proto_doselinesetting.pb.cc" />
+    <ClCompile Include="rt_tps_proto_doselinetemplate.pb.cc" />
+    <ClCompile Include="rt_tps_proto_header.pb.cc" />
+    <ClCompile Include="rt_tps_proto_machine.pb.cc" />
+    <ClCompile Include="rt_tps_proto_mouse_action.pb.cc" />
+    <ClCompile Include="rt_tps_proto_normalizationgroup.pb.cc" />
+    <ClCompile Include="rt_tps_proto_patient.pb.cc" />
+    <ClCompile Include="rt_tps_proto_patient_tree_data.pb.cc" />
+    <ClCompile Include="rt_tps_proto_plan.pb.cc" />
+    <ClCompile Include="rt_tps_proto_poi.pb.cc" />
+    <ClCompile Include="rt_tps_proto_poi_action.pb.cc" />
+    <ClCompile Include="rt_tps_proto_poi_reply.pb.cc" />
+    <ClCompile Include="rt_tps_proto_prescription.pb.cc" />
+    <ClCompile Include="rt_tps_proto_rotateshaded.pb.cc" />
+    <ClCompile Include="rt_tps_proto_segment.pb.cc" />
+    <ClCompile Include="rt_tps_proto_series.pb.cc" />
+    <ClCompile Include="rt_tps_proto_voi_advanced.pb.cc" />
+    <ClCompile Include="rt_tps_proto_zoomshaded.pb.cc" />
+    <ClCompile Include="rt_tps_registration_feedback.pb.cc" />
+    <ClCompile Include="rt_tps_rotate.pb.cc" />
+    <ClCompile Include="rt_tps_selectcontourslices.pb.cc" />
+    <ClCompile Include="rt_tps_simplebeam.pb.cc" />
+    <ClCompile Include="rt_tps_simplevoi.pb.cc" />
+    <ClCompile Include="rt_tps_stringlist.pb.cc" />
+    <ClCompile Include="rt_tps_tray_factor.pb.cc" />
+    <ClCompile Include="rt_tps_voieditinfo.pb.cc" />
+    <ClCompile Include="rt_tps_unit.pb.cc" />
+    <ClCompile Include="rt_tps_unitlist.pb.cc" />
+    <ClCompile Include="rt_tps_voi_template.pb.cc" />
+    <ClCompile Include="tda_imagereferenceinfo.pb.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RtTpsProtoLib.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

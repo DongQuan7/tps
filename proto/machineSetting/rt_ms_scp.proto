@@ -1,0 +1,18 @@
+package ms.proto;
+
+message RT_MS_SCPInfoList
+{
+  optional string uid = 1;
+  repeated RT_MS_SCPInfo scpInfo = 2;
+}
+
+
+message RT_MS_SCPInfo
+{
+	optional string uid = 1;
+	optional string parentuid = 2;
+	optional float fieldSizeX = 3;
+	optional float fieldSizeY = 4;
+	optional float scp = 5;
+    optional float scpdepth = 6;
+}

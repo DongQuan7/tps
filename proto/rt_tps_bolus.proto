@@ -1,0 +1,17 @@
+package tps.proto;
+message RtTpsBolus
+{       
+        required string bolusuid				= 1;
+	required string seriesuid			        = 2;
+	required string bolusname				= 3;
+	optional int32 planningrole			        = 4;
+        optional string beam_uid                                = 5;
+        optional float bolus_thickness			        = 6;
+	optional float mass_density                            = 7;
+    optional float reference_electron_density            = 8;
+        optional bool margin_uniformed                          = 9;
+        optional float margin_x1			        = 10;
+	optional float margin_x2                                = 11;
+        optional float margin_y1			        = 12;
+	optional float margin_y2                                = 13;
+}

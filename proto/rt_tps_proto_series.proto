@@ -1,0 +1,79 @@
+import "rt_tps_proto_series_table.proto";
+import "rt_tps_proto_poi.proto";
+package tps.proto;
+
+message RtTpsProtoImagetransformation
+{ 
+    optional string uid =1;
+    optional string originalseriesuid =2;
+    optional string transfomationseriesuid =3;
+    optional string description =4;
+    optional int32 RegistrationMethod =5;
+    //optional string registrationmatrix =6;
+}
+
+
+message RtTpsProtoSeries
+{
+    required string seriesUID				= 1;
+	optional float windowingCenter			= 2;
+	optional float windowingWidth			= 3;
+	optional int32 currentSlice				= 4;
+	optional int32 sliceCount				= 5;
+	optional int32 xDimension				= 6;
+	optional int32 yDimension				= 7;
+	optional float xPixelSpacing			= 8;
+	optional float yPixelSpacing			= 9;
+	optional float sliceSpacing				= 10;
+	optional string modality				= 11;
+	optional int32 bitAllocated				= 12;
+	optional string seriestime				= 13;
+	optional string seriesdate				= 14;
+	optional string seriesdescription		= 15;
+	optional string patientPosition			= 16;
+	optional bytes imageSliceBuffer			= 17;
+	optional bool isqa						= 18;
+	optional int32 seriesNumber				= 19;
+	optional string frameOfReference		= 20; 
+	optional string manufacturerModelName	= 21;
+	optional string acquisitionDateTime	    = 22;
+	optional string courseUID				= 23;
+	optional float startX                   = 24;
+	optional float startY                   = 25;
+	optional float startZ                   = 26;
+	optional float sizeX                    = 27;
+	optional float sizeY                    = 28;
+	optional float sizeZ                    = 29;
+	repeated RtTpsProtoImagetransformation imagetransformationList= 30;
+	repeated float orientationX             = 31;
+	repeated float orientationY             = 32;
+	repeated float orientationZ             = 33;
+	optional string groupUid                = 34;
+	optional string slicethickness			= 35;
+	//study
+	optional string studyid					= 36;
+	optional string studydescription		= 37;
+	//patient
+	optional string patientname				= 38;
+	optional string patientid				= 39;
+	optional string patientbirthdate		= 40;
+	optional string patientage				= 41;
+	optional string patientsex				= 42;
+	//others
+	optional string institutionname			= 43;
+	optional string manufacturer			= 44;
+	optional string ct2densityUID           = 45;
+	optional RtTpsProtoSeriesTable  seriesTable   = 46;
+
+	optional string patientuid				= 47;
+	optional string seriesname				= 48;
+	
+	optional bool isphantom						= 49;
+	repeated RtTpsProtoPoi poiList			= 50;
+}
+
+message RtTpsProtoRepeatedSeries
+{
+    repeated RtTpsProtoSeries seriesList 	= 1;
+}
+

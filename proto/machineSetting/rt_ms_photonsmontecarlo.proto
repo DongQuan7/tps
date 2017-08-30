@@ -1,0 +1,123 @@
+package ms.proto;
+
+message RT_MS_PMCPDD
+{
+    optional float primaryEnergyStart = 1;
+	optional float primaryEnergyEnd = 2;
+	optional int32 primaryEnergyBin = 3;
+	optional float primaryEnergyRestart = 4;
+    optional float secondaryEnergyStart = 5;
+	optional float secondaryEnergyEnd = 6;
+	optional int32 secondaryEnergyBin = 7;
+	optional float secondaryEnergyRestart = 8;
+	optional float electronEnergy = 9;
+    optional int32 particleNumber = 10;
+	repeated RT_MS_PMCEnergyAndSpectrum primarySpectrumCollection = 11;
+	repeated RT_MS_PMCEnergyAndSpectrum secondarySpectrumCollection = 12;
+	repeated RT_MS_PMCEnergyAndSpectrum electronSpectrumCollection = 13;
+	optional int32 CompleteFilesNumber = 14;
+}
+
+message RT_MS_PMCEnergyAndSpectrumList
+{
+    repeated RT_MS_PMCEnergyAndSpectrum EnergyAndSpectrumList	= 1;
+}
+
+message RT_MS_PMCEnergyAndSpectrum
+{
+    optional float energy = 1;
+	optional float weight = 2;
+}
+
+message RT_MS_PMCInField
+{
+    optional bool primarySoften = 1;
+	optional float softenParameter = 2;
+	optional int32 selectedSecondarySourceType = 4;
+	optional bool scatterSoften = 5;
+	repeated RT_MS_PMCSecondarySourceParameter secondarySourceParameterCollection = 6;
+}
+
+message RT_MS_PMCSecondarySourceParameter
+{
+    optional float flatFilterA = 1;
+	optional float flatFilterB = 2;
+}
+
+message RT_MS_PMCOutField
+{
+    optional float flatDistance = 1;
+	optional float jawDistance = 2;
+	optional float sigmaP = 3;
+	optional float sigmaS = 4;
+	optional float tailCorrection = 5;
+	optional float rectangleScatterCorrection = 6;
+	optional float mlcLeakage = 7;
+	optional bool gaussianBlurSwitch = 8;
+	optional float gaussianSigmaX = 9;
+	optional float gaussianSigmaY = 10;
+}
+
+message RT_MS_PMCElectronContamination
+{
+	optional float standardRadius = 1;
+	optional float sigma = 2;
+	optional float offset = 3;
+	optional float powerFactor = 4;
+}
+
+
+message RT_MS_PMCAbsoluteDose
+{
+    optional float norm10Dose = 1;
+	optional string absoluteDoseCollectionStr = 2;
+}
+
+message RT_MS_PMCWedgeField
+{
+    repeated RT_MS_PMCVirtualWedge virtualWedgeCollection = 1;
+	repeated RT_MS_PMCPhysicalWedge PhysicalWedgeCollection = 2;
+}
+
+message RT_MS_PMCVirtualWedge
+{
+    optional string wedgeUID = 1;
+    optional string wedgeName = 2;
+	optional float collimatorFixedPosition = 3;
+    repeated RT_MS_PMCVirtualWedgeTable virtualWedgeTableItemCollection = 4;
+}
+
+message RT_MS_PMCVirtualWedgeTable
+{
+    optional float collimatorMovingPosition = 1;
+	optional float relativeMU = 2;
+	optional float correctionFactor = 3;
+}
+
+message RT_MS_PMCPhysicalWedge
+{
+    optional string wedgeUID = 1;
+	optional string wedgeName = 2;
+	optional float wedgeThickness = 3;
+    repeated RT_MS_Point2D ContourVertexPointCollection = 4;
+	optional float carrierThickness = 5;
+    repeated RT_MS_Point2D carrierContourVertexPointCollection = 6;
+}
+
+message RT_MS_Point2D
+{
+    optional float X = 1;
+    optional float Y = 2;
+}
+
+message RT_MS_PhotonMonteCarloInformation
+{
+	optional string CommissionUID = 1;
+	optional RT_MS_PMCPDD PDDParameter                                     = 2;
+	optional RT_MS_PMCInField InFieldParameter                             = 3;
+	optional RT_MS_PMCOutField OutFieldParameter                           = 4;
+	optional RT_MS_PMCElectronContamination ElectronContaminationParameter = 5;
+	optional RT_MS_PMCAbsoluteDose AbsoluteDoseParameter                   = 6;
+	optional RT_MS_PMCWedgeField WedgeFieldParameter                       = 7;
+	
+}

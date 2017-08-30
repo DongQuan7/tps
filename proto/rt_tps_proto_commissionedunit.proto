@@ -1,0 +1,30 @@
+package tps.proto;
+message RtTpsProtoCommissionedunit
+{
+	required string commissionedunitUID							= 1;
+	optional int32 radiationType								= 2;
+	repeated int32 techniqueType								= 3;
+	optional string unitEnergy									= 4;
+	optional int32 flatteningfiltermode							= 5;
+	repeated float doseRates									= 6;
+	repeated RtTpsProtoTrayfactor trayfactors					= 7;
+	optional string machineUID									= 8;
+	optional float transmission									= 9;
+	optional bool ispencilebeamsupport							= 10;
+	optional bool isconvolutionsupport							= 11;
+	optional bool ismontecarlosupport							= 12;
+	optional int32 defaultdoserateindex                         = 13;
+}
+
+message RtTpsProtoRepeatedCommissionedunit
+{
+	repeated RtTpsProtoCommissionedunit commissionedunitList 	= 1;
+}
+
+message RtTpsProtoTrayfactor
+{
+	required string trayUID										= 1;
+	required float factor										= 2;
+	required string trayID                                      = 3;
+	optional string code                                        = 4;
+}

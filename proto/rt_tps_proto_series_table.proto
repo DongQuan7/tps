@@ -1,0 +1,19 @@
+package tps.proto;
+message RtTpsProtoSeriesTable
+{
+    required string tableUid			= 1;
+	required string seriesUid           = 2;
+	required float  averageMassDensity  = 3;
+	required float  offsetX             = 4;
+	required float  offsetY             = 5;
+	required float  offsetZ             = 6;
+	required float  angleX              = 7;
+	required float  angleY              = 8;
+	required float  angleZ              = 9;
+    required float  referenceElectronDensity      = 10;
+}
+
+message RtTpsProtoRepeatedSeriesTable
+{
+	repeated RtTpsProtoSeriesTable seriesTable	= 1;
+}

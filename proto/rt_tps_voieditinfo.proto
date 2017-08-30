@@ -1,0 +1,24 @@
+package tps.proto;
+
+message RT_TPS_EDIT_VOI_INFO
+{
+    required double x = 1;
+    required double y = 2;
+
+    required int32 mouseActionType = 3;
+    required int32 lastMouseActionType = 4;
+
+    required int32 windowtype = 5;
+    required string windowuid = 6;
+
+    required string voiUID = 7;
+    optional double radius = 8;
+	optional int32 voieditingmode = 9;
+	optional bool isinterpolate = 10;
+
+	repeated string avoidvoiuid = 11;
+	optional bool iseditstarted = 12;
+
+	repeated double ptxlist = 13; // 归一化的屏幕坐标系的x坐标值数组
+	repeated double ptylist = 14; // 归一化的屏幕坐标系的y坐标值数组
+}

@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B1B973D-CA69-4DCC-B87A-D2257CC5C96B}</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <RootNamespace>RtTpsDatabaseWrapper</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\..\UIH\bin_debug\</OutDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\..\UIH\bin\</OutDir>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Include;.\include;..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\external\boost_1_51_0;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\external\lib-mysql;..\..\..\..\UIH\include\mcs\Common\McsfSystemEnvironmentConfig</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PreprocessorDefinitions>DATABASE_MYSQL;ULIB=RtTpsDatabase;_DEBUG;TEST_PERFORMANCE_ON</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4127;4251;4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib_debug\external;..\..\..\..\UIH\lib_debug\mcs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfLogger.lib;McsfFileParser.lib;McsfSystemEnvironmentConfig.lib;McsfDicomConvertor.lib;McsfDataHeader.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib_debug\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\Include;.\include;..\..\..\..\UIH\include\rt;..\..\..\..\UIH\include\mcs;..\..\..\..\UIH\include\external\boost_1_51_0;..\..\..\..\UIH\include\external;..\..\..\..\UIH\include\external\lib-mysql;..\..\..\..\UIH\include\mcs\Common\McsfSystemEnvironmentConfig</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DATABASE_MYSQL;ULIB=RtTpsDatabase;TEST_PERFORMANCE_ON</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4127;4251;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <TreatWarningAsError>true</TreatWarningAsError>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\..\..\..\UIH\lib\external;..\..\..\..\UIH\lib\mcs</AdditionalLibraryDirectories>
+      <AdditionalDependencies>McsfLogger.lib;McsfFileParser.lib;McsfSystemEnvironmentConfig.lib;McsfDicomConvertor.lib;McsfDataHeader.lib</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <ImportLibrary>..\..\..\..\UIH\lib\rt\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_common_enums.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_data.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_defs.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_factory.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_objects.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_accessory.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_accessorychunk.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_applicator.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_approverecord.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_base.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_beam.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_beamsegment.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_beam_accessory.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_beam_poi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_block.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_commissionedunit.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_commissionedunit_tray.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_constraint.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_constrainttemplate.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_contour.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_course.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_ct2density.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_deliverybeamgroup.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_dosegrid.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_doseline.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_doseoptendcriterionbyinteration.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_doseoptendcriterionbytime.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_doseoptgoalbase.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_drrsetting.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_dvh.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_equipment.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_globalconfig.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_goldenstt.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_image.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_image3d.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_imagetransformation.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_kerneldata.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_kerneldatalist.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_kernelweight.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_machine.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_mcphocommissionedunit.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_mcphomonoenergyweight.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_measureddata.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_measuredprofile.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_mlcshape.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_mlcshape_ex.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_monocompressedphasespacedata.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_normgroup.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_norm_poi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_norm_voi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_ntcp.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_patient.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_plan.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_plan_poi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_plan_voi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_poi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_prescription.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_rtimage.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_series.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_seriesgroup.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_seriestable.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_site.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_structureset.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_study.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_template.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_tablecontour.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_tcp.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_tray.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_voi.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_voisetting.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_interface_object_wedgefactor.h" />
+    <ClInclude Include="..\include\RtTpsDatabaseWrapper\rt_tps_database_uid_generater.h" />
+    <ClInclude Include="include\rt_tps_database_client.h" />
+    <ClInclude Include="include\rt_tps_database_client_protocol.h" />
+    <ClInclude Include="include\rt_tps_database_client_tcp.h" />
+    <ClInclude Include="include\rt_tps_database_connect.h" />
+    <ClInclude Include="include\rt_tps_database_cryptohash.h" />
+    <ClInclude Include="include\rt_tps_database_object_helper.h" />
+    <ClInclude Include="include\rt_tps_database_sql_generater.h" />
+    <ClInclude Include="include\rt_tps_database_wrapper.h" />
+    <ClInclude Include="include\rt_tps_database_wrapper_utils.h" />
+    <ClInclude Include="include\StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\rt_tps_database_client.cpp" />
+    <ClCompile Include="src\rt_tps_database_client_tcp.cpp" />
+    <ClCompile Include="src\rt_tps_database_cryptohash.cpp" />
+    <ClCompile Include="src\rt_tps_database_data.cpp" />
+    <ClCompile Include="src\rt_tps_database_factory.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_accessory.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_accessorychunk.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_applicator.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_approverecord.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_base.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_beam.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_beamsegment.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_beam_accessory.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_beam_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_block.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_commissionedunit.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_commissionedunit_tray.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_constraint.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_constrainttemplate.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_contour.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_course.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_ct2density.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_deliverybeamgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_dosegrid.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_doseline.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_doseoptendcriterionbyinteration.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_doseoptendcriterionbytime.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_doseoptgoalbase.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_drrsetting.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_dvh.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_equipment.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_globalconfig.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_goldenstt.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_image.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_image3d.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_imagetransformation.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_kerneldata.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_kerneldatalist.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_kernelweight.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_machine.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_mcphocommissionedunit.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_mcphomonoenergyweight.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_measureddata.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_measuredprofile.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_mlcshape.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_mlcshape_ex.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_monocompressedphasespacedata.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_normgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_norm_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_norm_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_ntcp.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_patient.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_plan.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_plan_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_plan_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_prescription.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_rtimage.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_seriesgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_seriestable.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_site.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_structureset.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_study.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_template.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_tablecontour.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_tcp.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_tray.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_voisetting.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_wedgefactor.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_accessory.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_accessorychunk.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_applicator.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_approverecord.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_beam_accessory.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_beam_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_beam.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_beamsegment.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_block.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_commissionedunit.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_commissionedunit_tray.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_constraint.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_constrainttemplate.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_contour.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_course.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_ct2density.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_deliverybeamgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_dosegrid.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_doseline.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_doseoptgoalbase.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_drrsetting.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_equipment.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_goldenstt.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_image.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_imagetransformation.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_kerneldata.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_kerneldatalist.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_kernelweight.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_machine.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_mcphocommissionedunit.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_mcphomonoenergyweight.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_measureddata.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_measuredprofile.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_mlcshape.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_monocompressedphasespacedata.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_normgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_norm_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_norm_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_ntcp.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_patient.cpp" />
+    <ClCompile Include="src\rt_tps_database_interface_object_series.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\rt_tps_database_object_helper_plan.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_plan_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_plan_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_poi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_prescription.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_rtimage.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_series.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_seriesgroup.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_seriestable.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_site.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_structureset.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_study.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_template.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_tablecontour.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_tcp.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_tray.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_voi.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_voisetting.cpp" />
+    <ClCompile Include="src\rt_tps_database_object_helper_wedgefactor.cpp" />
+    <ClCompile Include="src\rt_tps_database_sql_generater.cpp" />
+    <ClCompile Include="src\rt_tps_database_uid_generater.cpp" />
+    <ClCompile Include="src\rt_tps_database_wrapper.cpp" />
+    <ClCompile Include="src\rt_tps_database_wrapper_utils.cpp" />
+    <ClCompile Include="src\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

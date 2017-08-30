@@ -1,0 +1,30 @@
+package tps.proto;
+
+message RT_TPS_POINT3D
+{
+	required double x = 1;
+	required double y = 2;
+	required double z = 3;
+	optional double preserve = 4;
+}
+
+message RT_TPS_VECTOR3D
+{
+	optional double x = 1;
+	optional double y = 2;
+	optional double z = 3;
+}
+
+message RT_TPS_TRIANGLEINDEX
+{
+	optional int32 index1 = 1;
+	optional int32 index2 = 2;
+	optional int32 index3 = 3;
+}
+
+message RT_TPS_MESH
+{
+	repeated RT_TPS_POINT3D points = 1;
+	repeated RT_TPS_VECTOR3D normals = 2;
+	repeated RT_TPS_TRIANGLEINDEX triangleIndices = 3;
+}

@@ -1,0 +1,17 @@
+package tps.proto;
+
+message RT_TPS_CREATE_PHANTOM
+{
+    optional string patientUID = 1;
+    required string phantomName = 2;
+    optional string description = 3;
+    required float  phantomWidth = 4;
+    required float  phantomHeight = 5;
+    required float  phantomLength = 6;
+    required float  sliceSpacing = 7;
+    optional int32  xDimension = 8;
+    optional int32  yDimension = 9;
+    optional float  xSpacing = 10;
+    optional float  ySpacing = 11;
+    optional float  ctvalue = 12;
+}

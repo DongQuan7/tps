@@ -1,0 +1,42 @@
+#version 430
+
+layout(local_size_x=1, local_size_y=1) in;
+
+layout(std430, binding=0) readonly buffer GaussianKernel
+{
+    float kernel[27];
+};
+
+layout(r32f, binding=0) uniform image3D resultData;
+
+uniform sampler3D texOrgData;
+uniform ivec3 volumeDim;
+
+float QueryData(vec3 point);
+
+void main()
+{
+    vec3 coord = (vec3(gl_GlobalInvocationID) + 0.5) / volumeDim;
+    vec3 step = 1.0 / volumeDim;
+
+    float result = 0.0;
+    int i = 0;
+    for(int z = -1; z <= 1; ++z)
+    {
+        for(int y = -1; y <= 1; ++y)
+        {
+            for(int x = -1; x <= 1; ++x)
+            {
+                result += kernel[i++] * QueryData(coord + vec3(x, y, z) * step);
+            }
+        }
+    }
+
+    imageStore(resultData, ivec3(gl_GlobalInvocationID), vec4(result, 0, 0, 0));
+    memoryBarrier();
+}
+
+float QueryData(vec3 point)
+{
+    return texture(texOrgData, point).r * 127.0;
+}

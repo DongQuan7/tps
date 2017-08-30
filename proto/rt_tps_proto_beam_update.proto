@@ -1,0 +1,19 @@
+package tps.proto;
+
+message RtTpsProtoBeamUpdate
+{
+	required string beam_uid = 1;
+	optional bool isVisible = 2;
+	optional string beam_name = 3;
+	optional string beam_description = 4;
+	optional bool isAutoCreatedDescription = 5;
+	optional bool isAutoTrackingShape = 6;
+	optional bool isShieldingBlockAutoTrackingShape = 7;
+	optional float dose_rate = 8;
+	optional bool isJoined = 9;
+	optional int32 algorithm_type = 10;
+	optional bool isJawFollow = 11;
+    optional float beam_mu = 12;
+	optional float beam_weight = 13;
+	optional string commission_uid = 14;
+}

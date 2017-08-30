@@ -1,0 +1,26 @@
+package tps.proto;
+
+message RT_TPS_MLC_EDIT_INFO
+{
+    required double x = 1;
+    required double y = 2;
+
+    required int32 mouseActionType = 3;
+    required int32 lastMouseActionType = 4;
+
+    required int32 windowType = 5;
+    optional string windowUID = 6;
+
+	required string beamUID = 7;
+	required int32 segmentID = 8;
+    
+	optional int32 editingMode = 9;
+
+    optional double radius = 10;
+	optional bool isEditingStarted = 11;
+    
+    optional int32 mlcEditMode = 12;
+
+    optional double width = 13;
+    optional double height = 14;
+}

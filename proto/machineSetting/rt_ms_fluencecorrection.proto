@@ -1,0 +1,11 @@
+package ms.proto;
+
+message RT_MS_FluenceCorrection
+{
+    optional string commissionUID = 1;
+	optional string measureUID = 2;
+	repeated float energy = 3;
+	optional float depth = 4;
+	
+
+}

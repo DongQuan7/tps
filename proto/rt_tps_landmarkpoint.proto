@@ -1,0 +1,15 @@
+
+package tps.proto;
+
+message RT_TPS_LANDMARK_POINT
+{
+    optional int32  index = 1;
+    required double x = 2;
+    required double y = 3;
+    required double z = 4;
+}
+
+message RT_TPS_LANDMARK_POINT_LIST
+{
+    repeated RT_TPS_LANDMARK_POINT points = 1;
+}

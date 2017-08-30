@@ -1,0 +1,33 @@
+package tps.proto;
+message RtTpsProtoPlanQAAddNormalGroupConfigTable
+{
+	// 在PLAN_QA中添加NormalizationGroup弹窗信息
+	required string treatmentPlanNormalGroupUID						= 1; // selected related 
+	
+	// Beam setup 信息
+	required bool isBeamGantryFromTreatment							= 2;
+	required bool isBeamTableFromTreatment							= 3;
+	required bool isBeamCollimatorFromTreatment						= 4;
+	optional float gantryStartAngle									= 5;
+	optional float collimatorAngle									= 6;
+	optional float couchAngle										= 7;
+	
+	// Isocenter 信息
+	required int32 IsoCenterType									= 8; // 1:POI, 2:VOI
+	optional string IsocenterPOIUID									= 9;
+	optional string IsocenterVOIUID									= 10;
+	
+	// Goal 信息
+	// Goal Dose
+	required bool isGoalFromTreatment								= 11;
+	optional double dosePerFraction									= 12;
+	optional int32 fractionCount									= 13;
+	optional double totalDose										= 14;
+	optional double doseLinePercentage								= 15;
+	// Goal Target
+	required int32 goalTargetType									= 16; // 1:POI, 2:VOI
+	optional string targetVOIUID									= 17;
+	optional int32 voiDoseType										= 18; // 1:Average, 2:Dose at xx% volume
+	optional double doseAtVolumePercentage							= 19;
+	optional string targetPOIUID									= 20;
+}

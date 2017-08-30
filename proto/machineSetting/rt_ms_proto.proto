@@ -1,0 +1,15 @@
+package ms.proto;
+
+message RT_MS_Proto
+{
+    optional string uid = 1;
+	optional string objectType = 2;
+	optional string parent_uid = 3;
+	optional int32 algType = 4;
+	repeated string filename = 5;
+	repeated string physicalwedgeuidlist = 6;
+	repeated string virtualwedgeuidlist = 7;
+	optional string uid2 = 8;
+	optional string uid3 = 9;
+	optional float variant= 10;
+}

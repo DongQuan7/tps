@@ -1,0 +1,52 @@
+import "rt_tps_proto_beam.proto";
+package tps.proto;
+message RtTpsProtoNormalizationGroup
+{
+   required string normalizationGroupUID                         = 1;
+   optional string normalizationGroupName                        = 2;
+   optional int32 techniqueType                                  = 3;
+   optional string machineUID                                    = 4;
+   optional bool targetIsPoi                                     = 5;
+   optional double dosePerFraction                               = 6;
+   optional int32 fractionCount                                  = 7;
+   optional bool isAverageVoi                                    = 8;
+   optional double poiDosePercent                                = 9;
+   optional double voiDoseAtVolume                               = 10;
+   optional double voiDosePercent                                = 11;
+   optional int32 radiationType                                  = 12;//RADIATION_PROTON
+   optional bool isAutoCalculate                                 = 13;
+   optional int32 startSlice                                     = 14;
+   optional int32 endSlice                                       = 15;
+   optional bool isJoined                                        = 16;
+   optional int32 editType                                       = 17; //NormGroupEditType
+   optional int32 isApproved                                     = 18;
+   optional string prescriptionUID                               = 19;
+   optional string planUID                                       = 20;
+   optional string normalizationPoiUID                           = 21;
+   optional string normalizationVoiUID                           = 22;
+   repeated RtTpsProtoBeam beamList                              = 23;
+   optional double doseGridStartX                                = 24;
+   optional double doseGridStartY                                = 25;
+   optional double doseGridStartZ                                = 26;
+   optional double doseGridSpacingX                              = 27;
+   optional double doseGridSpacingY                              = 28;
+   optional double doseGridSpacingZ                              = 29;
+   optional double doseGridSizeX                                 = 30;
+   optional double doseGridSizeY                                 = 31;
+   optional double doseGridSizeZ                                 = 32;
+   optional double electronEnergyForDrr                          = 33;
+   optional int32 ctThresholdMinForDrr                           = 34;
+   optional int32 ctThresholdMaxForDrr                           = 35;
+   optional string ct2densityUidForDrr                           = 36;
+   optional bool  isGating                                       = 37;
+   optional int32 binMode                                        = 38;
+   optional double beamOnRangeStart                              = 39;
+   optional double beamOnRangeEnd                                = 40;
+   optional bool isDoseValid                                     = 41;
+   optional string description                                   = 42;
+}
+
+message RtTpsProtoRepeatedNormalizationGroup
+{
+   repeated RtTpsProtoNormalizationGroup normalizationGroupList   = 1;
+}

@@ -1,0 +1,65 @@
+package ms.proto;
+
+
+message RT_MS_ImportFromFileList
+{
+	optional string commissionUID = 1;
+	optional float depth = 2;
+	optional bool isNormalDepth = 3;
+	optional int32 algType = 4;
+	
+    optional float minAxisX = 5;
+	optional float maxAxisX = 6;
+	optional float minAxisY = 7;
+	optional float maxAxisY = 8;
+	optional string objectoperationtype = 9;
+	
+	repeated RT_MS_ImportFromFileInfo ImportFromFileList= 10;
+}
+
+message RT_MS_ImportFromFileInfo
+{
+	optional string uID = 1;
+    optional bool isDisplay = 2;
+    optional string fieldSize = 3;
+	
+    optional int32 type = 4;
+    optional float  offsetX = 5;
+	optional float  offsetY = 6;
+	optional float  depth = 7;
+	optional int32 modulation = 8;
+	optional string wedgeACCID = 9;
+	optional bool   isWedgeACCID = 10;
+	optional int32 status = 11;
+	optional int32 algType = 12;
+	optional string parentuid = 13;
+	repeated RT_MS_CoodrinatePoint pointList = 14;
+	repeated RT_MS_CoodrinatePoint calpointList = 15;
+	
+	repeated RT_MS_CoodrinatePoint normpointList = 16;
+	repeated RT_MS_CoodrinatePoint normcalpointList = 17;
+	
+	optional float fieldsizex = 18;
+	optional float fieldsizey = 19;
+
+	repeated RT_MS_ErrorResult errorResultList = 20;
+	optional float degree = 21;
+    optional string wedgeUid = 22;
+}
+
+ message RT_MS_CoodrinatePoint
+ {
+	optional float x =1;
+	optional float y =2;
+	optional float z =3;
+	optional float dose =4;
+ }
+ 
+  message RT_MS_ErrorResult
+ {
+	optional string errorName =1;
+	optional float averageerror =2;
+	optional float maxerror =3;
+	optional float errorlimit =4;
+	optional float failurepoits = 5;
+ }

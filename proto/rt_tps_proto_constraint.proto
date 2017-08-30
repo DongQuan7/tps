@@ -1,0 +1,19 @@
+package tps.proto;
+message RtTpsProtoConstraint
+{
+	required string constraintUID			= 1;
+	optional string constraintName			= 2;
+	optional int32 doseType					= 3;
+	optional float dose						= 4;
+	optional float doseVolume				= 5;
+	optional string comments				= 6;
+	optional bool isAchieved				= 7;
+	optional string ConstraintPlanningRole  = 8;
+	optional string ConstraintBiologicalRole= 9;
+	optional int32 Tendency                 = 10;
+}
+
+message RtTpsProtoRepeatedConstraint
+{
+	repeated RtTpsProtoConstraint constraintList	= 1;
+}

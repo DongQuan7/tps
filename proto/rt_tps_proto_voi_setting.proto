@@ -1,0 +1,17 @@
+package tps.proto;
+message RtTpsProtoVoiSetting
+{
+    optional string uid         = 1;
+    optional string site		= 2;
+	optional string roiname	    = 3;
+	optional string description	= 4;
+    optional string chndescription	= 5;
+	optional int32 planningRole = 6;
+	optional int32 biologyRole  = 7;
+	optional string roicolor    = 8;
+}
+
+message RtTpsProtoRepeatedVoiSetting
+{
+	repeated RtTpsProtoVoiSetting voiSetting	= 1;
+}

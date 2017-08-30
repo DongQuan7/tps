@@ -1,0 +1,12 @@
+import "rt_tps_optgoals.proto";
+package tps.proto;
+ 
+message RT_TPS_Optinput
+{
+	optional string OptNgUid = 1;
+	repeated string BasedOnNgUids = 2;	
+	repeated RT_TPS_Optgoal goals = 3;
+	optional int32 endCriterialType = 4;
+	optional int32 endCriterialValue = 5;
+	
+}

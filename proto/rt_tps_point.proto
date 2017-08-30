@@ -1,0 +1,8 @@
+package tps.proto;
+
+message RT_TPS_POINT
+{
+  required double x = 1;
+  required double y = 2;
+  optional string label = 3;
+}
